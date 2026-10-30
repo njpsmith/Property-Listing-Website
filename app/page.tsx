@@ -1,9 +1,22 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    console.log("running");
+
+    fetch("https://dummyjson.com/products?limit=26&skip=26&select=title,price")
+      .then((res) => res.json())
+      .then(console.log);
+  }, []);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+        <div className="bg-red-100">Test</div>
+
         <Image
           className="dark:invert h-5 w-[100px]"
           src="/next.svg"
