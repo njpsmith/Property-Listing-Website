@@ -57,7 +57,9 @@ h1 + p,
 h2 + p,
 h3 + p,
 h4 + p,
-h5 + p {
+h5 + p,
+p + button,
+p + a button {
   margin-block-start: 1em;
 }
 
