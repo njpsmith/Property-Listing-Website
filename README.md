@@ -58,6 +58,29 @@ The site will contain the following pages:
 
 WRITE ABOUT THE TECH STACK
 
+## Searching and Filtering
+
+### URL Query Parameters
+
+URL parameters are the source of truth for submitted searches.
+
+This makes searches bookmark-able and shareable. Users can refresh their page and not lose their search results. They can bookmark the page and return to it later or share the filtered search results with a friend.
+
+We use the following parameters:
+
+- location
+- minPrice
+- maxPrice
+- minBedrooms
+- maxBedrooms
+
+An example search:
+`/properties?location=london&minPrice=300000&maxPrice=650000&minBedrooms=3&maxBedrooms=5`
+
+### Server-side filtering
+
+I will be doing server-side filtering. For a large property listing website, it is not feasible to request every property and filter them on the client side. This makes the application more scalable and reduces the size of payloads.
+
 ## Data Model
 
 ## Data Flow
@@ -73,6 +96,33 @@ API
 Database
 Returns search results
 
+When using the property search filters, the data flow will be as follows:
+
+```
+User changes search fields
+      |
+      v
+React Hook Form
+      |
+      v
+Zod validation
+      |
+      v
+Submit search
+      |
+      v
+Update URL search parameters
+      |
+      v
+Next.js reads search parameters
+      |
+      v
+Fetch matching properties
+      |
+      v
+Render property results
+```
+
 ## State Management
 
 React's built-in state, URL query parameters, and a server-data fetching strategy.
@@ -81,8 +131,50 @@ I will be using URL query parameters for Search filters as well as Pagination an
 
 I will use React's useState for local UI state.
 
+## API Design
+
 ## Testing Strategy
 
+Unit Tests
+
+- utilities
+- hooks
+- filter logic
+
+Integration Tests
+
+- API interactions
+- React Query flows
+
+E2E Tests
+
+- search flow
+- save property
+- URL restoration
+
+Visual Regression
+
+- snapshots
+- multi-theme testing
+
 ## Backed Architecture
+
+Talk about:
+
+- request lifecycle
+- DB querying
+- validation
+- filtering logic
+- pagination
+- performance bottlenecks
+
+Use:
+
+- Node.js
+- Express
+- SQLite/Postgres
+- Prisma
+
+## Accessibility
 
 ---
