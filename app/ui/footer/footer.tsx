@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="py-8 px-4 text-center">
+    <footer className="py-8 px-4 text-center border-solid border border-zinc-100">
       <p>
         Built by{" "}
         <a
@@ -13,7 +13,8 @@ export const Footer = () => {
         .
       </p>
       <p>
-        Built with Next.js and Tailwind CSS. The code for this site can be found{" "}
+        Built with Next.js, TypeScript and Tailwind CSS. The code for this site
+        can be found{" "}
         <a
           href="https://github.com/njpsmith/Property-Listing-Website"
           target="_blank"

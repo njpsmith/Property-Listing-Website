@@ -63,6 +63,10 @@ p + a button {
   margin-block-start: 1em;
 }
 
+hr {
+  margin: 2rem 0;
+}
+
 .site-header-container {
   position: relative;
   -webkit-box-shadow: 0px -3px 13px -1px rgba(0, 0, 0, 0.5);
@@ -88,7 +92,8 @@ p + a button {
 
 .site-header-container nav li a:hover,
 .site-header-container nav li a:focus,
-.site-header-container nav li a:active {
+.site-header-container nav li a:active,
+.site-header-container nav li.active a {
   border-bottom: 2px solid var(--electric-aqua);
 }
 
