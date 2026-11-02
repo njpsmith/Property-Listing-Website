@@ -3,6 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --electric-aqua: #1be7ff;
+  --neon-aqua-blue: #0ba7f6;
+  --deep-alpine-blue: #149ce0;
+
+  --light-green: #6eeb83;
+  --neon-chartreuse: #e4ff1a;
+  --amber-flame: #ffb800;
+  --tiger-flame: #ff5714;
 }
 
 @theme inline {
@@ -25,9 +34,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-  /* margin-block-start: 1em; */
+button {
+  cursor: pointer;
+  color: white;
 }
+
+.button--blue {
+  color: white;
+  background-color: var(--neon-aqua-blue);
+}
+
+.button--blue:hover {
+  background-color: var(--deep-alpine-blue);
+}
+
+p a {
+  text-decoration: underline;
+}
+
 p + p,
 h1 + p,
 h2 + p,
@@ -58,6 +82,12 @@ h5 + p {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.site-header-container nav li a:hover,
+.site-header-container nav li a:focus,
+.site-header-container nav li a:active {
+  border-bottom: 2px solid var(--electric-aqua);
 }
 
 .site-logo {

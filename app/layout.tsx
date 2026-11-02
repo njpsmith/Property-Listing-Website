@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 import { redaction } from "./ui/typography";
+import { Footer } from "./ui/footer/footer";
+import { Header } from "./ui/header/header";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -30,53 +32,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body
         className={`${redaction.className} antialiased min-h-full flex flex-col`}
       >
-        <header className="site-header-container">
-          <div className="site-header-container__inner">
-            <Link href="/">
-              <Image
-                className="site-logo"
-                src={"images/Frontdoor-House-Logo.svg"}
-                width={2161}
-                height={728}
-                alt="Frontdoor Logo"
-              />
-            </Link>
-
-            <nav className="flex-1 text-right">
-              <ul>
-                <li>
-                  <Link href="/properties">Find Properties</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+        <Header />
         {children}
 
-        <footer className="py-8 px-4 text-center">
-          <p>
-            Built by{" "}
-            <a
-              href="https://nsmith.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Nicholas Smith
-            </a>
-          </p>
-          <p>
-            Built with Next.js and Tailwind CSS. The code for this site can be
-            found{" "}
-            <a
-              href="https://github.com/njpsmith/Property-Listing-Website"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              here
-            </a>
-            .
-          </p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
