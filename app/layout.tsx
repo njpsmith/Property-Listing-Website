@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 import { redaction } from "./ui/typography";
-import { Footer } from "./ui/footer/footer";
-import { Header } from "./ui/header/header";
+import { Footer } from "./ui/layout/footer/footer";
+import { Header } from "./ui/layout/header/header";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

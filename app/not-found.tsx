@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ContentWrapper } from "./ui/content-wrapper/content-wrapper";
-import { Button } from "./ui/button/button";
+import { ContentWrapper } from "./ui/layout/content-wrapper/content-wrapper";
+import { Button } from "./ui/components/button/button";
 import Image from "next/image";
 
 export default function NotFound() {

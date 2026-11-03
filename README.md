@@ -44,6 +44,33 @@ I have decided to build this project using Next.js for several reasons. It has a
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+### Tech Stack
+
+// UPDATE THIS
+
+Frontend
+
+- Next.js
+- React
+- TypeScript
+- Zustand??
+- TanStack Query??
+- Tailwind
+
+Backend??
+
+- Node.js
+- Express
+- Prisma
+- SQLite initially
+
+Testing??
+
+- Vitest
+- React Testing Library
+- Playwright ??
+- MSW ??
+
 ---
 
 ## Pages
@@ -73,6 +100,7 @@ We use the following parameters:
 - maxPrice
 - minBedrooms
 - maxBedrooms
+- propertyType (e.g. House, Flat)
 
 An example search:
 `/properties?location=london&minPrice=300000&maxPrice=650000&minBedrooms=3&maxBedrooms=5`
@@ -82,6 +110,19 @@ An example search:
 I will be doing server-side filtering. For a large property listing website, it is not feasible to request every property and filter them on the client side. This makes the application more scalable and reduces the size of payloads.
 
 ## Data Model
+
+Properties will use the following type:
+
+```
+interface Property {
+  id: number;
+  address: string;
+  bedrooms: number | null;
+  bathrooms: number | null;
+  square_feet: number | null;
+  property_type: "house" | "apartment" | "condo" | "townhouse";
+}
+```
 
 ## Data Flow
 
@@ -132,6 +173,8 @@ I will be using URL query parameters for Search filters as well as Pagination an
 I will use React's useState for local UI state.
 
 ## API Design
+
+To start with, I used the following API for dummy property data, while I was building the front end: https://databasesample.com/mock-api/property-listings
 
 ## Testing Strategy
 

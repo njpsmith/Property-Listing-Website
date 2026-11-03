@@ -1,31 +1,22 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect } from "react";
-import { ContentWrapper } from "./ui/content-wrapper/content-wrapper";
-import { Button } from "./ui/button/button";
+import { ContentWrapper } from "./ui/layout/content-wrapper/content-wrapper";
+import { Button } from "./ui/components/button/button";
 
 export default function Home() {
-  useEffect(() => {
-    fetch("https://dummyjson.com/products?limit=26&skip=26&select=title,price")
-      .then((res) => res.json())
-      .then(console.log);
-  }, []);
-
   return (
     <ContentWrapper>
       <div className="text-left sm:text-center">
         <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black">
           Frontdoor - A Property Listing Website
         </h1>
-        <p className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+        <p className="text-lg leading-8 text-zinc-600">
           This is a demo property listing website in the style of Rightmove or
           Zoopla, created by{" "}
           <a
             href="https://nsmith.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-zinc-950 dark:text-zinc-50"
+            className="font-medium text-zinc-950"
           >
             Nicholas Smith
           </a>
