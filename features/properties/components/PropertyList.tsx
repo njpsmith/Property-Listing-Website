@@ -9,7 +9,7 @@ import { getProperties } from "../services/propertyService";
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export async function PropertyList() {
-  await delay(100000); // Add a delay to test the Suspense state
+  await delay(1000); // Add a delay to test the Suspense state
 
   const properties = await getProperties();
 
