@@ -44,6 +44,61 @@ I have decided to build this project using Next.js for several reasons. It has a
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+### Separation of Concerns
+
+Components render UI.
+
+The service is responsible for communicating with the API.
+
+Your components and pages shouldn't need to know the details of the HTTP request.
+
+### Feature-based Architecture
+
+I am using feature-based architecture, where property-related functionality lives together rather than spreading it across generic folders such as `components`, `services`, `hooks` and `types`.
+
+My folder structure will look something like:
+
+```
+src/
+├── app/
+│   ├── properties/
+│   │   └── page.tsx
+│   │
+│   ├── api/
+│   │   └── properties/
+│   │       └── route.ts
+│   │
+│   └── layout.tsx
+│
+├── features/
+│   └── properties/
+│       ├── components/
+│       │   ├── PropertyCard.tsx
+│       │   ├── PropertyList.tsx
+│       │   ├── PropertyFilters.tsx
+│       │   └── PropertySearchForm.tsx
+│       │
+│       ├── services/
+│       │   └── propertyService.ts
+│       │
+│       ├── hooks/
+│       │   └── useProperties.ts
+│       │
+│       ├── types/
+│       │   └── property.ts
+│       │
+│       └── utils/
+│           └── formatPropertyPrice.ts
+│
+├── lib/
+│   ├── api/
+│   │   └── apiClient.ts
+│   │
+│   └── utils/
+│
+└── types/
+```
+
 ### Tech Stack
 
 // UPDATE THIS
