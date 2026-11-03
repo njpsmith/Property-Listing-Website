@@ -2,8 +2,9 @@
 
 import { Suspense } from "react";
 // import { useEffect, useState } from "react";
-import { ContentWrapper } from "../ui/layout/content-wrapper/content-wrapper";
+import { ContentWrapper } from "../ui/layout/ContentWrapper/ContentWrapper";
 import { PropertyList } from "../../features/properties/components/PropertyList";
+import { PropertyCardSkeleton } from "../ui/components/PropertyCard/PropertyCardSkeleton";
 // import { getProperties } from "../../features/properties/services/propertyService";
 
 export default function Properties() {
@@ -20,11 +21,19 @@ export default function Properties() {
 
   return (
     <ContentWrapper>
-      <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black mb-4">
-        Properties page
+      <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black mb-6">
+        Property Listings
       </h1>
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex flex-col gap-4">
+            {Array.from({ length: 4 }).map((_, index) => (
+              <PropertyCardSkeleton key={index} />
+            ))}
+          </div>
+        }
+      >
         <PropertyList />
         {/* <PropertyList properties={properties} /> */}
       </Suspense>

@@ -1,5 +1,5 @@
 import { Property } from "../types/property";
-import { PropertyCard } from "../../../app/ui/components/property-card/property-card";
+import { PropertyCard } from "../../../app/ui/components/PropertyCard/PropertyCard";
 import { getProperties } from "../services/propertyService";
 
 // interface PropertyListProps {
@@ -9,7 +9,7 @@ import { getProperties } from "../services/propertyService";
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export async function PropertyList() {
-  await delay(3000); // Add a delay to test the Suspense state
+  await delay(100000); // Add a delay to test the Suspense state
 
   const properties = await getProperties();
 

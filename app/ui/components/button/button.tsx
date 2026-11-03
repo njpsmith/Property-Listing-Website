@@ -1,4 +1,4 @@
-import { ArrowRight } from "../arrows/arrow-right";
+import { ArrowRight } from "../arrows/ArrowRight";
 
 export const Button = ({ copy, arrow }: { copy: string; arrow?: true }) => {
   return (

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Property } from "../../../../features/properties/types/property";
+import { capitalizeFirstLetter } from "../../../../utils/utils";
 
 export const PropertyCard = ({
   id,
@@ -23,8 +24,9 @@ export const PropertyCard = ({
       <div className="p-4">
         <h4 className="text-lg font-bold leading-8">{address}</h4>
         <h5 className="font-bold">
-          {property_type} | {bedrooms} Bedroom{bedrooms && bedrooms > 1 && "s"}{" "}
-          | {bathrooms} Bathroom{bathrooms && bathrooms > 1 && "s"}
+          {capitalizeFirstLetter(property_type)}
+          {bedrooms && ` | ${bedrooms} Bedroom${bedrooms > 1 ? "s" : ""}`}
+          {bathrooms && ` | ${bathrooms} Bathroom${bathrooms > 1 ? "s" : ""}`}
         </h5>
         <p>
           This immaculate four bedroom property is uniquely private and

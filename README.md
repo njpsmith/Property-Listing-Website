@@ -38,6 +38,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Create a property listing
 - Edit/Delete a property listing
 
+### Loading States
+
+I have created skeleton UI components for the Propety Cards, so that before the API call has resolved (i.e. before we have any property data) the user will see an approximation of the expected UI. I created a PropertyCardSkeleton component for this.
+
 ## Technical Architecture
 
 I have decided to build this project using Next.js for several reasons. It has a built-in router, image optimisation, font optimisation, code splitting, and allows for static and server-side rendering.
