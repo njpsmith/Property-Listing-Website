@@ -2,9 +2,9 @@
 
 import { Suspense } from "react";
 // import { useEffect, useState } from "react";
-import { ContentWrapper } from "../ui/layout/ContentWrapper/ContentWrapper";
-import { PropertyList } from "../../features/properties/components/PropertyList";
-import { PropertyCardSkeleton } from "../ui/components/PropertyCard/PropertyCardSkeleton";
+import { ContentWrapper } from "@/app/ui/layout/ContentWrapper/ContentWrapper";
+import { PropertyList } from "@/features/properties/components/PropertyList";
+import { PropertyCardSkeleton } from "@/app/ui/components/PropertyCard/PropertyCardSkeleton";
 // import { getProperties } from "../../features/properties/services/propertyService";
 
 export default function Properties() {

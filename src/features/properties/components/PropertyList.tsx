@@ -1,5 +1,5 @@
 import { Property } from "../types/property.types";
-import { PropertyCard } from "../../../app/ui/components/PropertyCard/PropertyCard";
+import { PropertyCard } from "@/app/ui/components/PropertyCard/PropertyCard";
 import { getProperties } from "../services/propertyService";
 
 // interface PropertyListProps {

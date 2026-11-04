@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Property } from "../../../../features/properties/types/property.types";
-import { capitalizeFirstLetter } from "../../../../utils/utils";
+import { Property } from "@/features/properties/types/property.types";
+import { capitalizeFirstLetter } from "@/utils/utils";
 
 export const PropertyCard = ({
   id,
