@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { ContentWrapper } from "@/app/ui/layout/ContentWrapper/ContentWrapper";
 import { PropertyList } from "@/features/properties/components/PropertyList";
 import { PropertyCardSkeleton } from "@/app/ui/components/PropertyCard/PropertyCardSkeleton";
-// import { getProperties } from "../../features/properties/services/propertyService";
+// import { fetchProperties } from "../../features/properties/services/propertyService";
 import { PropertySearchFilter } from "@/features/properties/components/PropertySearchFilter";
 
 interface PropertiesPageProps {
@@ -14,6 +14,7 @@ interface PropertiesPageProps {
     maxPrice?: string;
     bedrooms?: string;
     bathrooms?: string;
+    property_type?: string;
   }>;
 }
 

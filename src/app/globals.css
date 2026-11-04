@@ -102,3 +102,29 @@ hr {
   height: auto;
   padding: 13px 0;
 }
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.field,
+.filter-button-wrapper {
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.field select {
+  min-width: 8rem;
+  padding: 0.5rem;
+  font: inherit;
+}

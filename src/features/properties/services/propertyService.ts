@@ -5,9 +5,10 @@ interface PropertyFilters {
   maxPrice?: string;
   bedrooms?: string;
   bathrooms?: string;
+  property_type?: string;
 }
 
-export async function getProperties(
+export async function fetchProperties(
   filters: PropertyFilters,
 ): Promise<Property[]> {
   const params = new URLSearchParams();
@@ -20,12 +21,16 @@ export async function getProperties(
     params.set("maxPrice", filters.maxPrice);
   }
 
-  if (filters.bedrooms) {
+  if (filters.bedrooms && filters.bedrooms !== "") {
     params.set("bedrooms", filters.bedrooms);
   }
 
-  if (filters.bathrooms) {
+  if (filters.bathrooms && filters.bathrooms !== "") {
     params.set("bathrooms", filters.bathrooms);
+  }
+
+  if (filters.property_type && filters.property_type !== "") {
+    params.set("property_type", filters.property_type);
   }
 
   const response = await fetch(

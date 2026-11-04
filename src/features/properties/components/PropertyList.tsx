@@ -1,6 +1,6 @@
 import { Property } from "../types/property.types";
 import { PropertyCard } from "@/app/ui/components/PropertyCard/PropertyCard";
-import { getProperties } from "../services/propertyService";
+import { fetchProperties } from "../services/propertyService";
 
 // interface PropertyListProps {
 //   properties: Property[];
@@ -12,6 +12,7 @@ interface PropertyResultsProps {
     maxPrice?: string;
     bedrooms?: string;
     bathrooms?: string;
+    property_type?: string;
   };
 }
 
@@ -22,24 +23,25 @@ export async function PropertyList({ searchParams }: PropertyResultsProps) {
 
   // await delay(1000); // Add a delay to test the Suspense state
 
-  const properties = await getProperties({
+  const properties = await fetchProperties({
     minPrice: params.minPrice,
     maxPrice: params.maxPrice,
     bedrooms: params.bedrooms,
     bathrooms: params.bathrooms,
+    property_type: params.property_type,
   });
 
-  // const properties = await getProperties();
+  // const properties = await fetchProperties();
 
   if (properties.length === 0) {
     return (
-      // <p className={styles.status}>
       <p>No properties match those filters. Try fewer bedrooms or bathrooms.</p>
     );
   }
 
   return (
     <>
+      {properties.length} {properties.length === 1 ? "Property" : "Properties"}
       {properties.map((property: Property) => {
         const { id, address, bedrooms, bathrooms, square_feet, property_type } =
           property;
