@@ -28,11 +28,6 @@ export async function getProperties(
     params.set("bathrooms", filters.bathrooms);
   }
 
-  console.log(
-    "paramszzz",
-    `https://databasesample.com/mock/property-listings/properties?${params.toString()}&_page=1&_limit=20`,
-  );
-
   const response = await fetch(
     // `https://databasesample.com/mock/property-listings/properties?_page=1&_limit=20`,
     `https://databasesample.com/mock/property-listings/properties?${params.toString()}&_page=1&_limit=20`,

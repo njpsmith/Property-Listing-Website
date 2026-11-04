@@ -1,5 +1,7 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
+
 interface PropertySearchFilterProps {
   minPrice?: string;
   maxPrice?: string;
@@ -7,12 +9,22 @@ interface PropertySearchFilterProps {
   bathrooms?: string;
 }
 
-export function PropertySearchFilter({
-  minPrice = "",
-  maxPrice = "",
-  bedrooms = "",
-  bathrooms = "",
-}: PropertySearchFilterProps) {
+// export function PropertySearchFilter(
+//   {
+//   // minPrice = "",
+//   // maxPrice = "",
+//   // bedrooms = "",
+//   // bathrooms = "",
+// }: PropertySearchFilterProps) {
+
+export function PropertySearchFilter() {
+  const searchParams = useSearchParams();
+
+  const minPrice = searchParams.get("minPrice") ?? "";
+  const maxPrice = searchParams.get("maxPrice") ?? "";
+  const bedrooms = searchParams.get("bedrooms") ?? "";
+  const bathrooms = searchParams.get("bathrooms") ?? "";
+
   return (
     <form action="/properties" method="GET">
       {/* <div>

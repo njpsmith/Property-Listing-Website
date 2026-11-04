@@ -20,20 +20,21 @@ interface PropertiesPageProps {
 export default async function PropertiesPage({
   searchParams,
 }: PropertiesPageProps) {
-  const params = await searchParams;
-
   return (
     <ContentWrapper>
       <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black mb-6">
         Property Listings
       </h1>
 
-      <PropertySearchFilter
-        minPrice={params.minPrice}
-        maxPrice={params.maxPrice}
-        bedrooms={params.bedrooms}
-        bathrooms={params.bathrooms}
-      />
+      <Suspense fallback={<div>Loading search bar...</div>}>
+        <PropertySearchFilter
+        // searchParams={searchParams}
+        // minPrice={params.minPrice}
+        // maxPrice={params.maxPrice}
+        // bedrooms={params.bedrooms}
+        // bathrooms={params.bathrooms}
+        />
+      </Suspense>
 
       <Suspense
         fallback={
@@ -44,8 +45,8 @@ export default async function PropertiesPage({
           </div>
         }
       >
-        <PropertyList searchParams={params} />
-        {/* <PropertyList properties={properties} /> */}
+        {/* <PropertyList /> */}
+        <PropertyList searchParams={searchParams} />
       </Suspense>
     </ContentWrapper>
   );
