@@ -57,11 +57,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ### Separation of Concerns
 
-Components render UI.
+I’ve deliberately separated the UI, state, data fetching, backend, and database concerns. This keeps the front end simpler, easier to test, and easier to change.
 
-The service is responsible for communicating with the API.
+The aim is to make each layer responsible for one thing, so that if you change your API, database or UI framework, you don't have to rewrite the entire application.
 
-Your components and pages shouldn't need to know the details of the HTTP request.
+This also increases testability: You should be able to test business logic independently, API integrations independently and UI components independently.
+
+Each layer has a clear responsibility:
+
+- Presentation layer (UI - pages, layouts, forms, loading states and skeletons, etc.). Components shouldn't contain API fetching logic or complex business rules.
+- State layer (hooks) coordinates search state (filters, sort, location, page, etc.) and fetching
+- Service layer handles API communication.
+- Backend validates and applies business rules.
+- Database handles data retrieval.
 
 ### Feature-based Architecture
 
@@ -177,6 +185,12 @@ I will be doing server-side filtering. For a large property listing website, it 
 
 ## Data Model
 
+For this demo, I've simplify the domain model to just three entities:
+
+1. Property – the property listing.
+2. User – the person using the application.
+3. SavedProperty – the relationship between a user and a saved property.
+
 Properties will use the following type:
 
 ```
@@ -189,6 +203,18 @@ interface Property {
   property_type: "house" | "apartment" | "condo" | "townhouse";
 }
 ```
+
+For the purposes of this demo, all properties will have one of the following addresses: London, Manchester, Birmingham, Brighton, Newcastle.
+
+### Entity Relationships
+
+Here's how I'd think about the database relationships:
+
+| Relationship               | Type         | Explanation                                                                       |
+| -------------------------- | ------------ | --------------------------------------------------------------------------------- |
+| User → SavedProperties     | One-to-many  | A user can save multiple properties                                               |
+| Property → SavedProperties | One-to-many  | A property can be saved by multiple users                                         |
+| User → Property            | Many-to-many | Users can save multiple properties, and properties can be saved by multiple users |
 
 ## Data Flow
 

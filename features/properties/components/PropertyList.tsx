@@ -1,4 +1,4 @@
-import { Property } from "../types/property";
+import { Property } from "../types/property.types";
 import { PropertyCard } from "../../../app/ui/components/PropertyCard/PropertyCard";
 import { getProperties } from "../services/propertyService";
 

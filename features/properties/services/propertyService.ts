@@ -1,4 +1,4 @@
-import { Property } from "../types/property";
+import { Property } from "../types/property.types";
 
 export async function getProperties(): Promise<Property[]> {
   const response = await fetch(
