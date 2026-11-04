@@ -229,7 +229,22 @@ API
 Database
 Returns search results
 
-When using the property search filters, the data flow will be as follows:
+For this app I will use URL query parameters as the source of truth for the search criteria, and let Next.js handle fetching the updated properties.
+
+The flow looks like this:
+
+1. User changes filters in `<PropertySearchFilter />`.
+2. The form updates the URL query parameters.
+3. Next.js navigates to the new URL.
+4. `page.tsx` receives the updated search parameters.
+5. The server calls `fetchProperties()` with those parameters.
+6. `<PropertyList />` receives the new properties and renders them.
+
+For example:
+
+`/properties?minPrice=200000&maxPrice=500000&bedrooms=3&sort=price-asc`
+
+From a more technical standpoint, the data flow when using the property search filters will be as follows:
 
 ```
 User changes search fields

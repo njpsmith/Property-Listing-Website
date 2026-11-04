@@ -6,12 +6,28 @@ import { getProperties } from "../services/propertyService";
 //   properties: Property[];
 // }
 
+interface PropertyResultsProps {
+  searchParams: {
+    minPrice?: string;
+    maxPrice?: string;
+    bedrooms?: string;
+    bathrooms?: string;
+  };
+}
+
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export async function PropertyList() {
-  await delay(1000); // Add a delay to test the Suspense state
+export async function PropertyList({ searchParams }: PropertyResultsProps) {
+  // await delay(1000); // Add a delay to test the Suspense state
 
-  const properties = await getProperties();
+  const properties = await getProperties({
+    minPrice: searchParams.minPrice,
+    maxPrice: searchParams.maxPrice,
+    bedrooms: searchParams.bedrooms,
+    bathrooms: searchParams.bathrooms,
+  });
+
+  // const properties = await getProperties();
 
   return (
     <>
