@@ -6,29 +6,44 @@ import { fetchProperties } from "../services/propertyService";
 //   properties: Property[];
 // }
 
-interface PropertyResultsProps {
-  searchParams: {
+// interface PropertyResultsProps {
+//   searchParams: {
+//     minPrice?: string;
+//     maxPrice?: string;
+//     bedrooms?: string;
+//     bathrooms?: string;
+//     property_type?: string;
+//   };
+// }
+
+interface PropertiesPageProps {
+  searchParams: Promise<{
     minPrice?: string;
     maxPrice?: string;
     bedrooms?: string;
     bathrooms?: string;
     property_type?: string;
-  };
+  }>;
 }
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export async function PropertyList({ searchParams }: PropertyResultsProps) {
-  const params = await searchParams;
+export async function PropertyList({
+  params,
+}: {
+  params: PropertiesPageProps["searchParams"];
+}) {
+  // export async function PropertyList({ searchParams }: PropertyResultsProps) {
+  const filters = await params;
 
   // await delay(1000); // Add a delay to test the Suspense state
 
   const properties = await fetchProperties({
-    minPrice: params.minPrice,
-    maxPrice: params.maxPrice,
-    bedrooms: params.bedrooms,
-    bathrooms: params.bathrooms,
-    property_type: params.property_type,
+    // minPrice: params.minPrice,
+    // maxPrice: params.maxPrice,
+    bedrooms: filters?.bedrooms,
+    bathrooms: filters?.bathrooms,
+    property_type: filters?.property_type,
   });
 
   // const properties = await fetchProperties();

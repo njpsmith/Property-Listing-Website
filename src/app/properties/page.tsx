@@ -14,11 +14,7 @@ interface PropertiesPageProps {
   }>;
 }
 
-export default async function PropertiesPage({
-  searchParams,
-}: PropertiesPageProps) {
-  const params = await searchParams;
-
+export default async function PropertiesPage(props: PropertiesPageProps) {
   return (
     <ContentWrapper>
       <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black mb-6">
@@ -26,7 +22,7 @@ export default async function PropertiesPage({
       </h1>
 
       <Suspense fallback={<div>Loading search bar...</div>}>
-        <PropertySearchFilter />
+        <PropertySearchFilter params={props.searchParams} />
       </Suspense>
 
       <Suspense
@@ -38,7 +34,7 @@ export default async function PropertiesPage({
           </div>
         }
       >
-        <PropertyList searchParams={params} />
+        <PropertyList params={props.searchParams} />
       </Suspense>
     </ContentWrapper>
   );

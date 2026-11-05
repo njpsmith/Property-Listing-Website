@@ -5,26 +5,39 @@
 import { PropertyType } from "../types/property.types";
 import { capitalizeFirstLetter } from "@/utils/utils";
 
-interface PropertySearchFilterProps {
-  minPrice?: string;
-  maxPrice?: string;
-  bedrooms?: string;
-  bathrooms?: string;
-  property_type?: string;
+// interface PropertySearchFilterProps {
+//   minPrice?: string;
+//   maxPrice?: string;
+//   bedrooms?: string;
+//   bathrooms?: string;
+//   property_type?: string;
+// }
+
+interface PropertiesPageProps {
+  searchParams: Promise<{
+    minPrice?: string;
+    maxPrice?: string;
+    bedrooms?: string;
+    bathrooms?: string;
+    property_type?: string;
+  }>;
 }
 
-export function PropertySearchFilter({
-  bedrooms = "",
-  bathrooms = "",
-  property_type = "",
-}: PropertySearchFilterProps) {
+export async function PropertySearchFilter({
+  params,
+}: {
+  params: PropertiesPageProps["searchParams"];
+}) {
   // const searchParams = useSearchParams();
+  const filters = await params;
 
-  // const minPrice = searchParams.get("minPrice") ?? "";
-  // const maxPrice = searchParams.get("maxPrice") ?? "";
-  // const bedrooms = searchParams.get("bedrooms") ?? "";
-  // const bathrooms = searchParams.get("bathrooms") ?? "";
-  // const property_type = searchParams.get("property_type") ?? "";
+  // const bedrooms = filters.get("bedrooms") ?? "";
+  // const bathrooms = filters.get("bathrooms") ?? "";
+  // const property_type = filters.get("property_type") ?? "";
+
+  const bedrooms = filters.bedrooms ?? "";
+  const bathrooms = filters.bathrooms ?? "";
+  const property_type = filters.property_type ?? "";
 
   const propertyTypes: PropertyType[] = [
     "house",
