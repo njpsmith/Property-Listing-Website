@@ -13,28 +13,27 @@ export async function fetchProperties(
 ): Promise<Property[]> {
   const params = new URLSearchParams();
 
-  if (filters.minPrice) {
+  if (filters.minPrice !== undefined && filters.minPrice !== "") {
     params.set("minPrice", filters.minPrice);
   }
 
-  if (filters.maxPrice) {
+  if (filters.maxPrice !== undefined && filters.maxPrice !== "") {
     params.set("maxPrice", filters.maxPrice);
   }
 
-  if (filters.bedrooms && filters.bedrooms !== "") {
+  if (filters.bedrooms !== undefined && filters.bedrooms !== "") {
     params.set("bedrooms", filters.bedrooms);
   }
 
-  if (filters.bathrooms && filters.bathrooms !== "") {
+  if (filters.bathrooms !== undefined && filters.bathrooms !== "") {
     params.set("bathrooms", filters.bathrooms);
   }
 
-  if (filters.property_type && filters.property_type !== "") {
+  if (filters.property_type !== undefined && filters.property_type !== "") {
     params.set("property_type", filters.property_type);
   }
 
   const response = await fetch(
-    // `https://databasesample.com/mock/property-listings/properties?_page=1&_limit=20`,
     `https://databasesample.com/mock/property-listings/properties?${params.toString()}&_page=1&_limit=20`,
     {
       next: {
