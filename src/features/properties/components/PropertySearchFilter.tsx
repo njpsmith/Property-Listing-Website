@@ -1,6 +1,6 @@
-"use client";
+// "use client";
 
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 // import { Select } from "@/app/ui/components/Select/Select";
 import { PropertyType } from "../types/property.types";
 import { capitalizeFirstLetter } from "@/utils/utils";
@@ -13,22 +13,18 @@ interface PropertySearchFilterProps {
   property_type?: string;
 }
 
-// export function PropertySearchFilter(
-//   {
-//   // minPrice = "",
-//   // maxPrice = "",
-//   // bedrooms = "",
-//   // bathrooms = "",
-// }: PropertySearchFilterProps) {
+export function PropertySearchFilter({
+  bedrooms = "",
+  bathrooms = "",
+  property_type = "",
+}: PropertySearchFilterProps) {
+  // const searchParams = useSearchParams();
 
-export function PropertySearchFilter() {
-  const searchParams = useSearchParams();
-
-  const minPrice = searchParams.get("minPrice") ?? "";
-  const maxPrice = searchParams.get("maxPrice") ?? "";
-  const bedrooms = searchParams.get("bedrooms") ?? "";
-  const bathrooms = searchParams.get("bathrooms") ?? "";
-  const property_type = searchParams.get("property_type") ?? "";
+  // const minPrice = searchParams.get("minPrice") ?? "";
+  // const maxPrice = searchParams.get("maxPrice") ?? "";
+  // const bedrooms = searchParams.get("bedrooms") ?? "";
+  // const bathrooms = searchParams.get("bathrooms") ?? "";
+  // const property_type = searchParams.get("property_type") ?? "";
 
   const propertyTypes: PropertyType[] = [
     "house",
@@ -43,33 +39,6 @@ export function PropertySearchFilter() {
       method="GET"
       className="property-search-bar filter"
     >
-      {/* <div>
-        <label htmlFor="minPrice">Minimum price</label>
-        <input
-          id="minPrice"
-          name="minPrice"
-          type="number"
-          defaultValue={minPrice}
-        />
-      </div>
-
-      <div>
-        <label htmlFor="maxPrice">Maximum price</label>
-        <input
-          id="maxPrice"
-          name="maxPrice"
-          type="number"
-          defaultValue={maxPrice}
-        />
-      </div> */}
-
-      {/* <Select
-        label="Bedrooms"
-        fieldName="bedrooms"
-        optionValues={["", "1", "2", "3", "4", "5"]}
-        optionLabels={["Any", "1", "2", "3", "4", "5"]}
-      /> */}
-
       <div className="field">
         <label htmlFor="bedrooms">Bedrooms</label>
         <select id="bedrooms" name="bedrooms" defaultValue={bedrooms}>

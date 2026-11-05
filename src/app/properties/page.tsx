@@ -1,11 +1,7 @@
-// "use client";
-
 import { Suspense } from "react";
-// import { useEffect, useState } from "react";
 import { ContentWrapper } from "@/app/ui/layout/ContentWrapper/ContentWrapper";
 import { PropertyList } from "@/features/properties/components/PropertyList";
 import { PropertyCardSkeleton } from "@/app/ui/components/PropertyCard/PropertyCardSkeleton";
-// import { fetchProperties } from "../../features/properties/services/propertyService";
 import { PropertySearchFilter } from "@/features/properties/components/PropertySearchFilter";
 
 interface PropertiesPageProps {
@@ -21,6 +17,8 @@ interface PropertiesPageProps {
 export default async function PropertiesPage({
   searchParams,
 }: PropertiesPageProps) {
+  const params = await searchParams;
+
   return (
     <ContentWrapper>
       <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black mb-6">
@@ -28,13 +26,7 @@ export default async function PropertiesPage({
       </h1>
 
       <Suspense fallback={<div>Loading search bar...</div>}>
-        <PropertySearchFilter
-        // searchParams={searchParams}
-        // minPrice={params.minPrice}
-        // maxPrice={params.maxPrice}
-        // bedrooms={params.bedrooms}
-        // bathrooms={params.bathrooms}
-        />
+        <PropertySearchFilter />
       </Suspense>
 
       <Suspense
@@ -46,8 +38,7 @@ export default async function PropertiesPage({
           </div>
         }
       >
-        {/* <PropertyList /> */}
-        <PropertyList searchParams={searchParams} />
+        <PropertyList searchParams={params} />
       </Suspense>
     </ContentWrapper>
   );
