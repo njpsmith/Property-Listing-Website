@@ -1,4 +1,5 @@
 import { Property } from "../types/property.types";
+import { API_URL } from "@/config/constants";
 
 interface PropertyFilters {
   minPrice?: string;
@@ -34,7 +35,7 @@ export async function fetchProperties(
   }
 
   const response = await fetch(
-    `https://databasesample.com/mock/property-listings/properties?${params.toString()}&_page=1&_limit=20`,
+    `${API_URL}?${params.toString()}&_page=1&_limit=20`,
     {
       next: {
         revalidate: 300, //revalidated after 300 seconds (five minutes).
@@ -51,14 +52,23 @@ export async function fetchProperties(
   return properties;
 }
 
-export async function getPropertyById(id: string): Promise<Property> {
-  const response = await fetch(
-    `https://databasesample.com/mock/property-listings/properties/${id}`,
-  );
+// export async function getPropertyById(id: string): Promise<Property> {
+export async function getPropertyById(id: string) {
+  const response = await fetch(`${API_URL}/properties/${id}`);
+
+  if (response.status === 404) {
+    return null;
+  }
 
   if (!response.ok) {
     throw new Error("Failed to fetch property");
   }
 
   return response.json();
+
+  // if (!response.ok) {
+  //   throw new Error("Failed to fetch property");
+  // }
+
+  // return response.json();
 }
