@@ -1,6 +1,8 @@
 import { getPropertyById } from "@/features/properties/services/propertyService";
 import { notFound } from "next/navigation";
 import { capitalizeFirstLetter } from "@/utils/utils";
+import { Button } from "@/app/ui/components/Button/Button";
+import Link from "next/link";
 
 interface Props {
   params: Promise<{
@@ -96,6 +98,14 @@ export default async function PropertyDetails({ params }: Props) {
           to a residential property in Scotland.
         </small>
       </p>
+
+      <hr />
+
+      <div className="text-center">
+        <Link href="/properties">
+          <Button copy="Back to search results" arrow={true} />
+        </Link>
+      </div>
     </main>
   );
 }

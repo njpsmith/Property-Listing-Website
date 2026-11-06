@@ -10,7 +10,7 @@ export const ArrowRight = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="inline-block"
+      className="inline-block top-[-1px] pl-1 relative"
     >
       <path d="M5 12h14" />
       <path d="m12 5 7 7-7 7" />
