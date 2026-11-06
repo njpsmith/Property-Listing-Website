@@ -12,6 +12,15 @@
   --neon-chartreuse: #e4ff1a;
   --amber-flame: #ffb800;
   --tiger-flame: #ff5714;
+
+  --white: #ffffff;
+
+  /* Dashboard */
+  --prussian-blue: #003d5c;
+  --twilight: #594e90;
+  --magenta: #bc4c96;
+  --pastel-red: #ff5f66;
+  --orange: #ffa600;
 }
 
 @theme inline {
@@ -103,14 +112,6 @@ hr {
   padding: 13px 0;
 }
 
-.filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
-
 .field,
 .filter-button-wrapper {
   flex: 1;
@@ -120,11 +121,13 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 .field select {
   min-width: 8rem;
   padding: 0.5rem;
+  color: black;
+  background-color: white;
   font: inherit;
 }

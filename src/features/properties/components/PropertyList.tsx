@@ -56,7 +56,11 @@ export async function PropertyList({
 
   return (
     <>
-      {properties.length} {properties.length === 1 ? "Property" : "Properties"}
+      <div className="my-6">
+        {properties.length}{" "}
+        {properties.length === 1 ? "property" : "properties"} found
+      </div>
+
       {properties.map((property: Property) => {
         const { id, address, bedrooms, bathrooms, square_feet, property_type } =
           property;
