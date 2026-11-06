@@ -14,3 +14,13 @@ export interface Property {
   square_feet: number | null;
   property_type: PropertyType;
 }
+
+export interface PropertiesPageProps {
+  searchParams: Promise<{
+    minPrice?: string;
+    maxPrice?: string;
+    bedrooms?: string;
+    bathrooms?: string;
+    property_type?: string;
+  }>;
+}

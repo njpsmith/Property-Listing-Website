@@ -3,16 +3,7 @@ import { ContentWrapper } from "@/app/ui/layout/ContentWrapper/ContentWrapper";
 import { PropertyList } from "@/features/properties/components/PropertyList";
 import { PropertyCardSkeleton } from "@/app/ui/components/PropertyCard/PropertyCardSkeleton";
 import { PropertySearchFilter } from "@/features/properties/components/PropertySearchFilter";
-
-interface PropertiesPageProps {
-  searchParams: Promise<{
-    minPrice?: string;
-    maxPrice?: string;
-    bedrooms?: string;
-    bathrooms?: string;
-    property_type?: string;
-  }>;
-}
+import { PropertiesPageProps } from "@/features/properties/types/property.types";
 
 export default async function PropertiesPage(props: PropertiesPageProps) {
   return (

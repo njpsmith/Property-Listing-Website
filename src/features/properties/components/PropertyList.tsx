@@ -1,30 +1,7 @@
 import { Property } from "../types/property.types";
 import { PropertyCard } from "@/app/ui/components/PropertyCard/PropertyCard";
 import { fetchProperties } from "../services/propertyService";
-
-// interface PropertyListProps {
-//   properties: Property[];
-// }
-
-// interface PropertyResultsProps {
-//   searchParams: {
-//     minPrice?: string;
-//     maxPrice?: string;
-//     bedrooms?: string;
-//     bathrooms?: string;
-//     property_type?: string;
-//   };
-// }
-
-interface PropertiesPageProps {
-  searchParams: Promise<{
-    minPrice?: string;
-    maxPrice?: string;
-    bedrooms?: string;
-    bathrooms?: string;
-    property_type?: string;
-  }>;
-}
+import { PropertiesPageProps } from "../types/property.types";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 

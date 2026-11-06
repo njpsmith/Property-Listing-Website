@@ -1,34 +1,11 @@
-// "use client";
-
-// import { useSearchParams } from "next/navigation";
-// import { Select } from "@/app/ui/components/Select/Select";
-import { PropertyType } from "../types/property.types";
+import { PropertyType, PropertiesPageProps } from "../types/property.types";
 import { capitalizeFirstLetter } from "@/utils/utils";
-
-// interface PropertySearchFilterProps {
-//   minPrice?: string;
-//   maxPrice?: string;
-//   bedrooms?: string;
-//   bathrooms?: string;
-//   property_type?: string;
-// }
-
-interface PropertiesPageProps {
-  searchParams: Promise<{
-    minPrice?: string;
-    maxPrice?: string;
-    bedrooms?: string;
-    bathrooms?: string;
-    property_type?: string;
-  }>;
-}
 
 export async function PropertySearchFilter({
   params,
 }: {
   params: PropertiesPageProps["searchParams"];
 }) {
-  // const searchParams = useSearchParams();
   const filters = await params;
 
   // const bedrooms = filters.get("bedrooms") ?? "";
