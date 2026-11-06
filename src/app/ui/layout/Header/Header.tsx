@@ -13,7 +13,7 @@ export const Header = () => {
         <Link href="/">
           <Image
             className="site-logo"
-            src={"images/Frontdoor-House-Logo.svg"}
+            src={"/images/Frontdoor-House-Logo.svg"}
             width={2161}
             height={728}
             alt="Frontdoor Logo"

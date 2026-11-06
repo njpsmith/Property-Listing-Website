@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { redaction } from "./ui/typography";
@@ -30,7 +31,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body
         className={`${redaction.className} antialiased min-h-full flex flex-col`}
       >
-        <Header />
+        <Suspense>
+          <Header />
+        </Suspense>
         {children}
 
         <Footer />

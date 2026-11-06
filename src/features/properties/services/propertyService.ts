@@ -50,3 +50,15 @@ export async function fetchProperties(
 
   return properties;
 }
+
+export async function getPropertyById(id: string): Promise<Property> {
+  const response = await fetch(
+    `https://databasesample.com/mock/property-listings/properties/${id}`,
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch property");
+  }
+
+  return response.json();
+}

@@ -23,8 +23,6 @@ export async function PropertyList({
     property_type: filters?.property_type,
   });
 
-  // const properties = await fetchProperties();
-
   if (properties.length === 0) {
     return (
       <p>No properties match those filters. Try fewer bedrooms or bathrooms.</p>
