@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import PropertyDetails from "./PropertyDetails";
+import { ContentWrapper } from "@/app/ui/layout/ContentWrapper/ContentWrapper";
 
 interface Props {
   params: Promise<{
@@ -9,8 +10,10 @@ interface Props {
 
 export default function PropertyPage({ params }: Props) {
   return (
-    <Suspense fallback={<div>Loading property...</div>}>
-      <PropertyDetails params={params} />
-    </Suspense>
+    <ContentWrapper>
+      <Suspense fallback={<div>Loading property...</div>}>
+        <PropertyDetails params={params} />
+      </Suspense>
+    </ContentWrapper>
   );
 }
