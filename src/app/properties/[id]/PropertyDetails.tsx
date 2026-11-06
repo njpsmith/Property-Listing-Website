@@ -12,7 +12,6 @@ interface Props {
 
 export default async function PropertyDetails({ params }: Props) {
   const { id } = await params;
-
   const property = await getPropertyById(id);
 
   if (!property) {
@@ -27,20 +26,24 @@ export default async function PropertyDetails({ params }: Props) {
 
       <div className="bg-zinc-100 p-6">
         <h3 className="text-lg leading-8">Property Details</h3>
-        <p>
-          {property.bathrooms}{" "}
-          {property.bathrooms === 1 ? "bathroom" : "bathrooms"}
-        </p>
-        <p>
-          {property.bedrooms} {property.bedrooms === 1 ? "bedroom" : "bedrooms"}
-        </p>
 
-        {/* <p>£{property.price.toLocaleString()}</p> */}
+        <ul className="list-style">
+          <li>
+            {property.bathrooms}{" "}
+            {property.bathrooms === 1 ? "bathroom" : "bathrooms"}
+          </li>
+          <li>
+            {property.bedrooms}{" "}
+            {property.bedrooms === 1 ? "bedroom" : "bedrooms"}
+          </li>
 
-        <p>Property type: {capitalizeFirstLetter(property.property_type)}</p>
+          <li>
+            Property type: {capitalizeFirstLetter(property.property_type)}
+          </li>
 
-        <p>{property.square_feet} square feet.</p>
-        <p>Price: £350,000</p>
+          <li>{property.square_feet} square feet.</li>
+          <li>Price: £350,000</li>
+        </ul>
       </div>
 
       <hr />

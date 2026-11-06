@@ -69,11 +69,19 @@ h4 + p,
 h5 + p,
 p + button,
 p + a button {
-  margin-block-start: 1em;
+  margin-block-start: 1rem;
 }
 
 hr {
   margin: 2rem 0;
+}
+
+ul.list-style {
+  padding-left: 22px;
+  list-style-type: disc;
+}
+ul.list-style li {
+  margin-bottom: 4px;
 }
 
 .site-header-container {
@@ -121,7 +129,6 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  /* font-size: 0.9rem; */
 }
 
 .field select {

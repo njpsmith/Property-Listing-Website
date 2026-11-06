@@ -54,7 +54,7 @@ export async function fetchProperties(
 
 // export async function getPropertyById(id: string): Promise<Property> {
 export async function getPropertyById(id: string) {
-  const response = await fetch(`${API_URL}/properties/${id}`);
+  const response = await fetch(`${API_URL}/${id}`);
 
   if (response.status === 404) {
     return null;

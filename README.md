@@ -157,6 +157,8 @@ The site will contain the following pages:
 - Log in?
 - Saved properties?
 
+For the individual property pages I am using dynamic routing (`/properties/[id]/page.tsx`). I pass in the property ID to this page (using the `params` prop), then query the API using the `getPropertyById(id)` function. This returns the data (price, number of bedrooms, etc.) for that specific property.
+
 WRITE ABOUT THE TECH STACK
 
 ## Searching and Filtering
