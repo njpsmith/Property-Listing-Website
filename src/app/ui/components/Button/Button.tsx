@@ -1,8 +1,8 @@
-import { ArrowRight } from "../arrows/ArrowRight";
+import { ArrowRight } from "../icons/ArrowRight";
 
 export const Button = ({ copy, arrow }: { copy: string; arrow?: true }) => {
   return (
-    <button className="button button--blue font-bold py-2 px-4 rounded">
+    <button className="button button--blue font-bold py-2 px-4 rounded transition-colors hover:bg-blue-400">
       {copy}
 
       {arrow && (

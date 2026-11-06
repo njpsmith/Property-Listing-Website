@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ContentWrapper } from "@/app/ui/layout/ContentWrapper/ContentWrapper";
 import { Button } from "@/app/ui/components/Button/Button";
 import Image from "next/image";
+import { FrownIcon } from "@/app/ui/components/icons/FrownIcon";
 
 export default function NotFound() {
   return (
@@ -22,7 +23,7 @@ export default function NotFound() {
           for:
         </p>
         <Link href="/properties">
-          <Button copy="Find Properties" />
+          <Button copy="Go Back" />
         </Link>
       </div>
     </ContentWrapper>
