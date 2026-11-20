@@ -307,7 +307,90 @@ E2E Tests
 Visual Regression
 
 - snapshots
-- multi-theme testing
+
+### Test location
+
+Unit and Integration tests will live alongside their components. E2E tests will live in a separate folder. E.g.
+
+```
+src/
+  features/
+    properties/
+      components/
+        PropertyCard.tsx
+        PropertyCard.test.tsx
+
+      services/
+        propertyService.ts
+        propertyService.test.ts
+
+      utils/
+        formatPrice.ts
+        formatPrice.test.ts
+
+      types/
+        property.ts
+
+  app/
+    properties/
+      page.tsx
+      [id]/
+        page.tsx
+
+  tests/
+    e2e/
+      property-search.spec.ts
+      property-details.spec.ts
+      navigation.spec.ts
+```
+
+### What to actually test
+
+#### A. Property search
+
+| Functionality    | What to test                            |
+| ---------------- | --------------------------------------- |
+| Location filter  | Selecting a location updates the search |
+| Minimum price    | Correct minimum price is applied        |
+| Maximum price    | Correct maximum price is applied        |
+| Bedrooms         | Correct minimum bedroom count           |
+| Property type    | Correct property types returned         |
+| Multiple filters | Filters work together                   |
+| Empty filters    | Empty parameters aren't sent            |
+| URL parameters   | Refreshing preserves search criteria    |
+| No results       | Empty state is displayed                |
+
+The plan is to have unit tests for the function that constructs your API query parameters and Playwright tests for the actual search journey.
+
+#### B. Individual property listings
+
+Test:
+
+- A valid ID returns the correct property.
+- An invalid ID displays your Next.js notFound() page.
+- Missing or nullable fields don't break the page.
+- Property images render correctly.
+- Price formatting is correct.
+- Singular/plural labels work (bedroom vs bedrooms).
+- Missing descriptions or images have appropriate fallbacks.
+
+#### C. Property cards
+
+Test:
+
+- Correct property information is displayed.
+- Price, location, bedrooms and bathrooms are correct.
+- Clicking the card navigates to the correct listing.
+- Missing optional information doesn't cause rendering errors.
+
+#### D. Loading and error states
+
+Test:
+
+- Loading skeletons appear while data is being fetched.
+- An API failure produces an appropriate error state.
+- An empty search produces an appropriate empty state.
+- A missing property produces a 404.
 
 ## Backed Architecture
 
