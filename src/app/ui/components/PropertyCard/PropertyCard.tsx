@@ -27,8 +27,8 @@ export const PropertyCard = ({
           <h4 className="text-lg font-bold leading-8">{address}</h4>
           <h5 className="font-bold">
             {capitalizeFirstLetter(property_type)}
-            {bedrooms && ` | ${bedrooms} Bedroom${bedrooms > 1 ? "s" : ""}`}
-            {bathrooms && ` | ${bathrooms} Bathroom${bathrooms > 1 ? "s" : ""}`}
+            {bedrooms && ` | ${bedrooms} bedroom${bedrooms > 1 ? "s" : ""}`}
+            {bathrooms && ` | ${bathrooms} bathroom${bathrooms > 1 ? "s" : ""}`}
           </h5>
           <p>
             This immaculate four bedroom property is uniquely private and

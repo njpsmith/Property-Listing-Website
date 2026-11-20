@@ -308,6 +308,8 @@ Visual Regression
 
 - snapshots
 
+I will aim to use `getByRole` over `getByTestId` wherever possible. This will encourage me to write tests based on how users and assistive technologies perceive the application, rather than how I've implemented it (i.e. testing for behaviour rather than implementation).
+
 ### Test location
 
 Unit and Integration tests will live alongside their components. E2E tests will live in a separate folder. E.g.

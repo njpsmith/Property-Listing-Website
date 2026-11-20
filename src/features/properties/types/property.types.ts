@@ -13,6 +13,8 @@ export interface Property {
   bathrooms: number | null;
   square_feet: number | null;
   property_type: PropertyType;
+  // title: string;
+  // price: number;
 }
 
 export interface PropertiesPageProps {
