@@ -7,7 +7,7 @@ export default function Home() {
     <ContentWrapper>
       <div className="text-left sm:text-center">
         <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black">
-          Frontdoor - A Property Listing Website
+          Frontdoor - Find Your Next Home
         </h1>
         <p className="text-lg leading-8 text-zinc-600">
           This is a demo property listing website in the style of Rightmove or
