@@ -41,7 +41,7 @@ export default async function PropertyDetails({ params }: Props) {
             Property type: {capitalizeFirstLetter(property.property_type)}
           </li>
 
-          <li>{property.square_feet} square feet.</li>
+          <li>{property.square_feet} square feet</li>
           <li>Price: £350,000</li>
         </ul>
       </div>

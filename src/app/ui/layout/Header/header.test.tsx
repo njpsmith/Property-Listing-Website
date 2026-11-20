@@ -9,5 +9,17 @@ describe("Header", () => {
     expect(
       screen.getByRole("img", { name: "Frontdoor Logo" }),
     ).toBeInTheDocument();
+
+    expect(
+      screen.getByRole("link", {
+        name: "Homepage",
+      }),
+    ).toHaveAttribute("href", "/");
+
+    expect(
+      screen.getByRole("link", {
+        name: "Find Properties",
+      }),
+    ).toHaveAttribute("href", "/properties");
   });
 });
