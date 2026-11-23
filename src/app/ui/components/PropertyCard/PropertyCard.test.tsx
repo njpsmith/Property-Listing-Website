@@ -7,7 +7,7 @@ import { PropertyCard } from "./PropertyCard";
 //   address: string;
 //   bedrooms: number | null;
 //   bathrooms: number | null;
-//   square_feet: number | null;
+//   squareMetres: number | null;
 //   property_type: PropertyType;
 // }
 
@@ -22,7 +22,7 @@ describe("PropertyCard", () => {
         // price={450000}
         bedrooms={3}
         bathrooms={2}
-        square_feet={1600}
+        squareMetres={1600}
         property_type={"house"}
       />,
     );
@@ -41,7 +41,7 @@ describe("PropertyCard", () => {
   //       address="Beautiful family home"
   //       bedrooms={3}
   //       bathrooms={2}
-  //       square_feet={2600}
+  //       squareMetres={2600}
   //       property_type={"apartment"}
   //     />,
   //   );
@@ -56,7 +56,7 @@ describe("PropertyCard", () => {
         address="Beautiful family home"
         bedrooms={3}
         bathrooms={2}
-        square_feet={2600}
+        squareMetres={2600}
         property_type={"apartment"}
       />,
     );
@@ -73,7 +73,7 @@ describe("PropertyCard", () => {
         address="Beautiful family home"
         bedrooms={3}
         bathrooms={2}
-        square_feet={2600}
+        squareMetres={2600}
         property_type={"apartment"}
       />,
     );

@@ -1,4 +1,4 @@
-import { Property } from "../types/property.types";
+import { PropertyListing } from "../types/property.types";
 import { API_URL } from "@/config/constants";
 
 interface PropertyFilters {
@@ -11,7 +11,7 @@ interface PropertyFilters {
 
 export async function fetchProperties(
   filters: PropertyFilters,
-): Promise<Property[]> {
+): Promise<PropertyListing[]> {
   const params = new URLSearchParams();
 
   if (filters.minPrice !== undefined && filters.minPrice !== "") {
@@ -47,12 +47,11 @@ export async function fetchProperties(
     throw new Error("Failed to fetch properties");
   }
 
-  const properties: Property[] = await response.json();
+  const properties: PropertyListing[] = await response.json();
 
   return properties;
 }
 
-// export async function getPropertyById(id: string): Promise<Property> {
 export async function getPropertyById(id: string) {
   const response = await fetch(`${API_URL}/${id}`);
 

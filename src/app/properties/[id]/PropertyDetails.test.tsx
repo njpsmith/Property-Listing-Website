@@ -19,7 +19,7 @@ describe("PropertyDetails", () => {
 
     expect(screen.getByText(/4 bathrooms/)).toBeInTheDocument();
     expect(screen.getByText(/1 bedroom/)).toBeInTheDocument();
-    expect(screen.getByText(/4947 square feet/)).toBeInTheDocument();
+    expect(screen.getByText(/4947 square metres/)).toBeInTheDocument();
     expect(screen.getByText(/Property Description/)).toBeInTheDocument();
   });
 });

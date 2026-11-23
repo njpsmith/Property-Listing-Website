@@ -8,6 +8,41 @@ The backend and API layer were built in... //TO FINISH
 
 // WRITE ABOUT TESTING and STATE MGMT
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+To run the test suite, run `npm test`
+
+# Table of Contents
+
+- [Frontdoor - A Property Listing Website](#frontdoor---a-property-listing-website)
+- [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Features](#features)
+    - [Advanced](#advanced)
+    - [Loading States](#loading-states)
+  - [Technical Architecture](#technical-architecture)
+    - [Separation of Concerns](#separation-of-concerns)
+    - [Feature-based Architecture](#feature-based-architecture)
+    - [Tech Stack](#tech-stack)
+  - [Pages](#pages)
+  - [Searching and Filtering](#searching-and-filtering)
+    - [URL Query Parameters](#url-query-parameters)
+    - [Server-side filtering](#server-side-filtering)
+  - [Data Model](#data-model)
+    - [Entity Relationships](#entity-relationships)
+  - [Data Flow](#data-flow)
+  - [State Management](#state-management)
+  - [API Design](#api-design)
+  - [Testing Strategy](#testing-strategy)
+    - [Test location](#test-location)
+    - [What to actually test](#what-to-actually-test)
+      - [A. Property search](#a-property-search)
+      - [B. Individual property listings](#b-individual-property-listings)
+      - [C. Property cards](#c-property-cards)
+      - [D. Loading and error states](#d-loading-and-error-states)
+  - [Backed Architecture](#backed-architecture)
+  - [Accessibility](#accessibility)
+
 ## Getting Started
 
 First, run the development server:
@@ -21,10 +56,6 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-To run the test suite, run `npm test`
 
 ## Features
 
@@ -189,7 +220,7 @@ I will be doing server-side filtering. For a large property listing website, it 
 
 ## Data Model
 
-For this demo, I've simplify the domain model to just three entities:
+For this demo, I've simplify the data model to just three entities:
 
 1. Property – the property listing.
 2. User – the person using the application.
@@ -198,14 +229,33 @@ For this demo, I've simplify the domain model to just three entities:
 Properties will use the following type:
 
 ```
-interface Property {
-  id: number;
-  address: string;
-  bedrooms: number | null;
+interface PropertyListing {
+  id: string;
+  title: string; // E.g. 'Stunning 3-bed in Crystal Palace
+  price: number;
+  address: {
+    city: string;
+    postcode: string;
+  };
+  bedrooms: number;
   bathrooms: number | null;
-  square_feet: number | null;
-  property_type: "house" | "apartment" | "condo" | "townhouse";
+  squareFeet: number | null;
+  propertyType: PropertyType;
+  description: string;
+  images: string[];
 }
+```
+
+With the following for property types:
+
+```
+type PropertyType =
+  | "detached"
+  | "semi-detached"
+  | "terraced"
+  | "flat"
+  | "bungalow"
+  | "townhouse";
 ```
 
 For the purposes of this demo, all properties will have one of the following addresses: London, Manchester, Birmingham, Brighton, Newcastle.
@@ -214,11 +264,11 @@ For the purposes of this demo, all properties will have one of the following add
 
 Here's how I'd think about the database relationships:
 
-| Relationship               | Type         | Explanation                                                                       |
-| -------------------------- | ------------ | --------------------------------------------------------------------------------- |
-| User → SavedProperties     | One-to-many  | A user can save multiple properties                                               |
-| Property → SavedProperties | One-to-many  | A property can be saved by multiple users                                         |
-| User → Property            | Many-to-many | Users can save multiple properties, and properties can be saved by multiple users |
+| Relationship               | Type        | Explanation                               |
+| -------------------------- | ----------- | ----------------------------------------- |
+| User → Property            | One-to-many | A user can have multiple properties       |
+| User → SavedProperties     | One-to-many | A user can save multiple properties       |
+| Property → SavedProperties | One-to-many | A property can be saved by multiple users |
 
 ## Data Flow
 

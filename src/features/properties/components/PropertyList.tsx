@@ -1,4 +1,4 @@
-import { Property } from "../types/property.types";
+import { PropertyListing } from "../types/property.types";
 import { PropertyCard } from "@/app/ui/components/PropertyCard/PropertyCard";
 import { fetchProperties } from "../services/propertyService";
 import { PropertiesPageProps } from "../types/property.types";
@@ -36,9 +36,15 @@ export async function PropertyList({
         {properties.length === 1 ? "property" : "properties"} found
       </div>
 
-      {properties.map((property: Property) => {
-        const { id, address, bedrooms, bathrooms, square_feet, property_type } =
-          property;
+      {properties.map((property: PropertyListing) => {
+        const {
+          id,
+          address,
+          bedrooms,
+          bathrooms,
+          squareMetres,
+          property_type,
+        } = property;
 
         return (
           <PropertyCard
@@ -47,7 +53,7 @@ export async function PropertyList({
             address={address}
             bedrooms={bedrooms}
             bathrooms={bathrooms}
-            square_feet={square_feet}
+            squareMetres={squareMetres}
             property_type={property_type}
           />
         );
