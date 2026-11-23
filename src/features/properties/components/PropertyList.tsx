@@ -3,7 +3,7 @@ import { PropertyCard } from "@/app/ui/components/PropertyCard/PropertyCard";
 import { fetchProperties } from "../services/propertyService";
 import { PropertiesPageProps } from "../types/property.types";
 
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+// const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export async function PropertyList({
   params,
