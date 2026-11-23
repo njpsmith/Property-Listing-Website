@@ -18,16 +18,6 @@ export interface Coordinates {
   longitude: number;
 }
 
-export interface PropertiesPageProps {
-  searchParams: Promise<{
-    minPrice?: string;
-    maxPrice?: string;
-    bedrooms?: string;
-    bathrooms?: string;
-    property_type?: string;
-  }>;
-}
-
 interface PropertyImage {
   id: string;
   url: string;
@@ -53,4 +43,14 @@ export interface PropertyListing {
   images: PropertyImage[];
   listingStatus: ListingStatus;
   listedAt: string; // Use ISO 8601 date strings for this. E.g. "2026-10-15T09:30:00.000Z"
+}
+
+export interface PropertiesPageProps {
+  searchParams: Promise<{
+    minPrice?: string;
+    maxPrice?: string;
+    bedrooms?: string;
+    bathrooms?: string;
+    property_type?: string;
+  }>;
 }

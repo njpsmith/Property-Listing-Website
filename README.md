@@ -231,18 +231,19 @@ Properties will use the following type:
 ```
 interface PropertyListing {
   id: string;
+  referenceNumber: string;
   title: string; // E.g. 'Stunning 3-bed in Crystal Palace
   price: number;
-  address: {
-    city: string;
-    postcode: string;
-  };
+  address: PropertyAddress;
+  coordinates?: Coordinates;
   bedrooms: number;
   bathrooms: number | null;
-  squareFeet: number | null;
-  propertyType: PropertyType;
+  squareMetres: number | null;
+  propertyType: string;
   description: string;
-  images: string[];
+  images: PropertyImage[];
+  listingStatus: ListingStatus;
+  listedAt: string; // Use ISO 8601 date strings for this. E.g. "2026-10-15T09:30:00.000Z"
 }
 ```
 
