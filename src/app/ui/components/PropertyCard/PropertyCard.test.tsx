@@ -1,65 +1,61 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { PropertyCard } from "./PropertyCard";
+import type { PropertyListing } from "@/features/properties/types/property.types";
 
-// export interface Property {
-//   id: number;
-//   address: string;
-//   bedrooms: number | null;
-//   bathrooms: number | null;
-//   squareMetres: number | null;
-//   property_type: PropertyType;
-// }
-
-// export type PropertyType = "house" | "apartment" | "condo" | "townhouse";
+const propertyFixture: PropertyListing = {
+  id: "1",
+  referenceNumber: "FD100001",
+  title: "Victorian family home with generous garden",
+  price: 475000,
+  address: {
+    line1: "24 Willowbank Road",
+    line2: null,
+    city: "London",
+    postcode: "SE19 2AB",
+  },
+  coordinates: {
+    latitude: 51.4192,
+    longitude: -0.0815,
+  },
+  bedrooms: 3,
+  bathrooms: 2,
+  squareMetres: 112,
+  propertyType: "terraced",
+  description:
+    "A beautifully presented Victorian home combining period character with modern living.",
+  images: [
+    {
+      id: "img-001-1",
+      url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9",
+      alt: "Attractive modernised family home exterior",
+      isPrimary: true,
+      order: 1,
+    },
+  ],
+  listingStatus: "available",
+  listedAt: "2026-10-12T09:30:00Z",
+};
 
 describe("PropertyCard", () => {
   it("renders the property title", () => {
-    render(
-      <PropertyCard
-        id={1}
-        address="Beautiful family home"
-        // price={450000}
-        bedrooms={3}
-        bathrooms={2}
-        squareMetres={1600}
-        property_type={"house"}
-      />,
-    );
+    render(<PropertyCard {...propertyFixture} />);
 
     expect(
       screen.getByRole("heading", {
-        name: "Beautiful family home",
+        name: "Victorian family home with generous garden",
       }),
     ).toBeInTheDocument();
   });
 
-  // it("renders the property price", () => {
-  //   render(
-  //     <PropertyCard
-  //       id={1}
-  //       address="Beautiful family home"
-  //       bedrooms={3}
-  //       bathrooms={2}
-  //       squareMetres={2600}
-  //       property_type={"apartment"}
-  //     />,
-  //   );
+  it("renders the property price", () => {
+    render(<PropertyCard {...propertyFixture} />);
 
-  //   expect(screen.getByText("£450,000")).toBeInTheDocument();
-  // });
+    expect(screen.getByText("£475,000")).toBeInTheDocument();
+  });
 
   it("renders the number of bedrooms", () => {
-    render(
-      <PropertyCard
-        id={7}
-        address="Beautiful family home"
-        bedrooms={3}
-        bathrooms={2}
-        squareMetres={2600}
-        property_type={"apartment"}
-      />,
-    );
+    render(<PropertyCard {...propertyFixture} bedrooms={3} />);
 
     expect(screen.getAllByRole("heading", { level: 5 })[0]).toHaveTextContent(
       /3 bedrooms/,
@@ -67,16 +63,7 @@ describe("PropertyCard", () => {
   });
 
   it("renders the number of bathrooms", () => {
-    render(
-      <PropertyCard
-        id={7}
-        address="Beautiful family home"
-        bedrooms={3}
-        bathrooms={2}
-        squareMetres={2600}
-        property_type={"apartment"}
-      />,
-    );
+    render(<PropertyCard {...propertyFixture} bathrooms={2} />);
 
     expect(screen.getAllByRole("heading", { level: 5 })[0]).toHaveTextContent(
       /2 bathrooms/,

@@ -17,9 +17,11 @@ export async function PropertySearchFilter({
   const property_type = filters.property_type ?? "";
 
   const propertyTypes: PropertyType[] = [
-    "house",
-    "apartment",
-    "condo",
+    "detached",
+    "semi-detached",
+    "terraced",
+    "flat",
+    "bungalow",
     "townhouse",
   ];
 

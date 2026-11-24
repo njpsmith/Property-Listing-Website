@@ -1,7 +1,10 @@
-import { PropertyListing } from "../types/property.types";
 import { PropertyCard } from "@/app/ui/components/PropertyCard/PropertyCard";
 import { fetchProperties } from "../services/propertyService";
 import { PropertiesPageProps } from "../types/property.types";
+import propertiesJson from "../data/properties.json";
+import { PropertyListing } from "../types/property.types";
+
+const properties = propertiesJson as PropertyListing[];
 
 // const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -10,18 +13,20 @@ export async function PropertyList({
 }: {
   params: PropertiesPageProps["searchParams"];
 }) {
+  console.log("🚀 ~ propertiesTest:", properties);
+
   // export async function PropertyList({ searchParams }: PropertyResultsProps) {
   const filters = await params;
 
   // await delay(1000); // Add a delay to test the Suspense state
 
-  const properties = await fetchProperties({
-    // minPrice: params.minPrice,
-    // maxPrice: params.maxPrice,
-    bedrooms: filters?.bedrooms,
-    bathrooms: filters?.bathrooms,
-    property_type: filters?.property_type,
-  });
+  // const properties = await fetchProperties({
+  //   // minPrice: params.minPrice,
+  //   // maxPrice: params.maxPrice,
+  //   bedrooms: filters?.bedrooms,
+  //   bathrooms: filters?.bathrooms,
+  //   property_type: filters?.property_type,
+  // });
 
   if (properties.length === 0) {
     return (
@@ -39,22 +44,38 @@ export async function PropertyList({
       {properties.map((property: PropertyListing) => {
         const {
           id,
+          title,
+          price,
           address,
           bedrooms,
           bathrooms,
           squareMetres,
-          property_type,
+          propertyType,
+          referenceNumber,
+          coordinates,
+          description,
+          images,
+          listingStatus,
+          listedAt,
         } = property;
 
         return (
           <PropertyCard
             key={id}
+            referenceNumber={referenceNumber}
             id={id}
+            title={title}
+            price={price}
             address={address}
             bedrooms={bedrooms}
             bathrooms={bathrooms}
             squareMetres={squareMetres}
-            property_type={property_type}
+            propertyType={propertyType}
+            coordinates={coordinates}
+            description={description}
+            images={images}
+            listingStatus={listingStatus}
+            listedAt={listedAt}
           />
         );
       })}

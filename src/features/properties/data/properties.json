@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "prop-001",
+    "referenceNumber": "FD100001",
+    "title": "Victorian family home with generous garden",
+    "price": 475000,
+    "address": {
+      "line1": "24 Willowbank Road",
+      "line2": null,
+      "city": "London",
+      "postcode": "SE19 2AB"
+    },
+    "coordinates": {
+      "latitude": 51.4192,
+      "longitude": -0.0815
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareMetres": 112,
+    "propertyType": "terraced",
+    "description": "A beautifully presented Victorian home combining period character with modern living. The property features three well-proportioned bedrooms, a bright reception room and a contemporary kitchen opening onto a generous south-facing garden. Ideally positioned close to independent shops, cafés and excellent transport links.",
+    "images": [
+      {
+        "id": "img-001-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Attractive modernised family home exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-001-2",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Bright contemporary living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-12T09:30:00Z"
+  },
+  {
+    "id": "prop-002",
+    "referenceNumber": "FD100002",
+    "title": "Contemporary city-centre apartment",
+    "price": 265000,
+    "address": {
+      "line1": "Flat 18, The Foundry",
+      "line2": "8 Mason Street",
+      "city": "Manchester",
+      "postcode": "M4 6BF"
+    },
+    "coordinates": {
+      "latitude": 53.4852,
+      "longitude": -2.2301
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareMetres": 76,
+    "propertyType": "flat",
+    "description": "A stylish two-bedroom apartment in a sought-after city-centre development. The open-plan living space benefits from floor-to-ceiling windows and excellent natural light. The principal bedroom has an en-suite bathroom, while residents enjoy convenient access to restaurants, shops and transport connections.",
+    "images": [
+      {
+        "id": "img-002-1",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary apartment interior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-002-2",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern open-plan kitchen and dining area",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "under-offer",
+    "listedAt": "2026-09-28T11:15:00Z"
+  },
+  {
+    "id": "prop-003",
+    "referenceNumber": "FD100003",
+    "title": "Detached family residence in a quiet cul-de-sac",
+    "price": 625000,
+    "address": {
+      "line1": "17 Oakfield Close",
+      "line2": null,
+      "city": "Solihull",
+      "postcode": "B91 3PL"
+    },
+    "coordinates": {
+      "latitude": 52.4131,
+      "longitude": -1.7798
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "squareMetres": 198,
+    "propertyType": "detached",
+    "description": "An impressive detached family home offering spacious accommodation across two floors. Highlights include a large kitchen and dining area, separate reception room and four generous bedrooms. Outside, the landscaped rear garden provides an excellent space for entertaining, while the private driveway offers off-street parking.",
+    "images": [
+      {
+        "id": "img-003-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Detached family house with landscaped surroundings",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-003-2",
+        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Spacious modern kitchen",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-19T14:00:00Z"
+  },
+  {
+    "id": "prop-004",
+    "referenceNumber": "FD100004",
+    "title": "Characterful terraced home near the university",
+    "price": 295000,
+    "address": {
+      "line1": "42 Ash Grove",
+      "line2": null,
+      "city": "Leeds",
+      "postcode": "LS6 2QA"
+    },
+    "coordinates": {
+      "latitude": 53.8178,
+      "longitude": -1.5696
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "squareMetres": 84,
+    "propertyType": "terraced",
+    "description": "A charming period property in a popular residential neighbourhood. The accommodation includes two double bedrooms, a welcoming living room and a well-equipped kitchen. The property retains several original features and benefits from a private rear courtyard, with local amenities and green spaces within easy reach.",
+    "images": [
+      {
+        "id": "img-004-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Traditional terraced property exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-004-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Traditional home interior with modern furnishings",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "sold",
+    "listedAt": "2026-08-15T10:00:00Z"
+  },
+  {
+    "id": "prop-005",
+    "referenceNumber": "FD100005",
+    "title": "Bright apartment in a popular harbourside location",
+    "price": 325000,
+    "address": {
+      "line1": "Apartment 12, Harbour View",
+      "line2": "6 Quay Street",
+      "city": "Bristol",
+      "postcode": "BS1 4RB"
+    },
+    "coordinates": {
+      "latitude": 51.4507,
+      "longitude": -2.5981
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "squareMetres": 68,
+    "propertyType": "flat",
+    "description": "A well-maintained apartment enjoying an attractive position close to Bristol Harbourside. The property offers two bedrooms, a modern bathroom and a light-filled open-plan kitchen and living area. An ideal purchase for first-time buyers or investors seeking a convenient city location.",
+    "images": [
+      {
+        "id": "img-005-1",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Bright modern apartment living space",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-005-2",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary apartment interior",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-05T08:45:00Z"
+  },
+  {
+    "id": "prop-006",
+    "referenceNumber": "FD100006",
+    "title": "Extended semi-detached home with driveway",
+    "price": 410000,
+    "address": {
+      "line1": "9 Fernbank Avenue",
+      "line2": null,
+      "city": "Liverpool",
+      "postcode": "L18 7HF"
+    },
+    "coordinates": {
+      "latitude": 53.3827,
+      "longitude": -2.8954
+    },
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "squareMetres": 154,
+    "propertyType": "semi-detached",
+    "description": "A thoughtfully extended semi-detached property offering flexible family accommodation. The ground floor features a spacious kitchen and dining room overlooking the rear garden, alongside a separate lounge. Four bedrooms provide plenty of space, while the front driveway offers convenient off-street parking.",
+    "images": [
+      {
+        "id": "img-006-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Semi-detached family home exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-006-2",
+        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary kitchen and dining space",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-17T12:20:00Z"
+  },
+  {
+    "id": "prop-007",
+    "referenceNumber": "FD100007",
+    "title": "Elegant Georgian townhouse in the heart of the city",
+    "price": 695000,
+    "address": {
+      "line1": "31 Rose Street",
+      "line2": null,
+      "city": "Edinburgh",
+      "postcode": "EH2 2PR"
+    },
+    "coordinates": {
+      "latitude": 55.9531,
+      "longitude": -3.1967
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareMetres": 146,
+    "propertyType": "townhouse",
+    "description": "An elegant townhouse combining period architecture with carefully considered contemporary interiors. Arranged over several floors, the property offers three bedrooms, generous living accommodation and a stylish kitchen. Its central location provides easy access to Edinburgh's cultural attractions, shops and restaurants.",
+    "images": [
+      {
+        "id": "img-007-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Elegant traditional townhouse exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-007-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Refined contemporary living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "under-offer",
+    "listedAt": "2026-10-02T09:00:00Z"
+  },
+  {
+    "id": "prop-008",
+    "referenceNumber": "FD100008",
+    "title": "Detached bungalow in a peaceful residential setting",
+    "price": 385000,
+    "address": {
+      "line1": "6 Meadow Lane",
+      "line2": null,
+      "city": "Guildford",
+      "postcode": "GU2 8LT"
+    },
+    "coordinates": {
+      "latitude": 51.2475,
+      "longitude": -0.5901
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "squareMetres": 79,
+    "propertyType": "bungalow",
+    "description": "A well-presented detached bungalow offering comfortable single-storey living. The accommodation includes two bedrooms, a bright sitting room and a practical kitchen with direct access to the rear garden. The property is conveniently located for local shops, bus routes and nearby green spaces.",
+    "images": [
+      {
+        "id": "img-008-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Detached bungalow exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-008-2",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Light and airy living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-20T15:30:00Z"
+  },
+  {
+    "id": "prop-009",
+    "referenceNumber": "FD100009",
+    "title": "Modern townhouse overlooking landscaped communal gardens",
+    "price": 385000,
+    "address": {
+      "line1": "5 Waterside Walk",
+      "line2": null,
+      "city": "Salford",
+      "postcode": "M50 3XW"
+    },
+    "coordinates": {
+      "latitude": 53.4702,
+      "longitude": -2.2934
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareMetres": 128,
+    "propertyType": "townhouse",
+    "description": "A contemporary three-bedroom townhouse situated in a popular waterside development. The property features an open-plan kitchen and dining area, a spacious principal bedroom and modern bathrooms. Residents benefit from landscaped communal outdoor spaces and excellent access to nearby amenities.",
+    "images": [
+      {
+        "id": "img-009-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary townhouse exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-009-2",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern open-plan kitchen",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "withdrawn",
+    "listedAt": "2026-09-11T13:45:00Z"
+  },
+  {
+    "id": "prop-010",
+    "referenceNumber": "FD100010",
+    "title": "Well-proportioned family home close to local schools",
+    "price": 335000,
+    "address": {
+      "line1": "52 Kingswood Road",
+      "line2": null,
+      "city": "Birmingham",
+      "postcode": "B30 2AB"
+    },
+    "coordinates": {
+      "latitude": 52.4264,
+      "longitude": -1.9281
+    },
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "squareMetres": 106,
+    "propertyType": "semi-detached",
+    "description": "A traditional semi-detached home offering excellent potential for buyers looking to create a home of their own. The property includes three bedrooms, two reception areas and a practical kitchen. A private rear garden provides outdoor space, and the location is convenient for schools, shops and transport links.",
+    "images": [
+      {
+        "id": "img-010-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Traditional semi-detached house",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-010-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Comfortable family living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-08T10:10:00Z"
+  },
+  {
+    "id": "prop-011",
+    "referenceNumber": "FD100011",
+    "title": "Stylish one-bedroom apartment in Clerkenwell",
+    "price": 395000,
+    "address": {
+      "line1": "Apartment 7, Mill House",
+      "line2": "14 Farringdon Road",
+      "city": "London",
+      "postcode": "EC1M 3HE"
+    },
+    "coordinates": {
+      "latitude": 51.5208,
+      "longitude": -0.1046
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareMetres": 48,
+    "propertyType": "flat",
+    "description": "A beautifully presented one-bedroom apartment in a desirable central London location. The property offers a well-designed open-plan living space, a modern kitchen and a spacious double bedroom. Excellent transport connections and a wide selection of restaurants and independent shops are nearby.",
+    "images": [
+      {
+        "id": "img-011-1",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Stylish modern apartment",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-011-2",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary apartment kitchen",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-21T08:30:00Z"
+  },
+  {
+    "id": "prop-012",
+    "referenceNumber": "FD100012",
+    "title": "Substantial detached home with private garden",
+    "price": 540000,
+    "address": {
+      "line1": "18 Brookfield Drive",
+      "line2": null,
+      "city": "Manchester",
+      "postcode": "M21 8JP"
+    },
+    "coordinates": {
+      "latitude": 53.4405,
+      "longitude": -2.2713
+    },
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "squareMetres": 176,
+    "propertyType": "detached",
+    "description": "A spacious detached home situated in a popular residential area. The property provides four bedrooms, generous reception accommodation and a modern kitchen with ample storage. The rear garden is well established and offers a peaceful setting for outdoor dining, while a private driveway provides parking for multiple vehicles.",
+    "images": [
+      {
+        "id": "img-012-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Large detached family house",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-012-2",
+        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Spacious contemporary kitchen",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "sold",
+    "listedAt": "2026-08-29T12:00:00Z"
+  },
+  {
+    "id": "prop-013",
+    "referenceNumber": "FD100013",
+    "title": "Compact city apartment ideal for first-time buyers",
+    "price": 185000,
+    "address": {
+      "line1": "Flat 9, Parkside Court",
+      "line2": "22 Regent Street",
+      "city": "Leeds",
+      "postcode": "LS2 7QA"
+    },
+    "coordinates": {
+      "latitude": 53.8011,
+      "longitude": -1.5468
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareMetres": 42,
+    "propertyType": "flat",
+    "description": "A smartly presented apartment offering well-planned accommodation in a convenient central location. The property features a double bedroom, a modern bathroom and an open-plan kitchen and living area. An excellent opportunity for first-time buyers or those seeking a city investment.",
+    "images": [
+      {
+        "id": "img-013-1",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Compact modern apartment interior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-013-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern apartment living space",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-14T09:20:00Z"
+  },
+  {
+    "id": "prop-014",
+    "referenceNumber": "FD100014",
+    "title": "Period townhouse in the heart of Clifton",
+    "price": 575000,
+    "address": {
+      "line1": "16 Pembroke Road",
+      "line2": null,
+      "city": "Bristol",
+      "postcode": "BS8 3BA"
+    },
+    "coordinates": {
+      "latitude": 51.4581,
+      "longitude": -2.6205
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareMetres": 121,
+    "propertyType": "terraced",
+    "description": "A characterful period home situated in one of Bristol's most desirable neighbourhoods. The property combines elegant original details with contemporary fittings and offers three bedrooms, two bathrooms and generous living accommodation. A private courtyard provides a pleasant outdoor retreat.",
+    "images": [
+      {
+        "id": "img-014-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Period terraced home exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-014-2",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Elegant contemporary living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "under-offer",
+    "listedAt": "2026-10-01T11:00:00Z"
+  },
+  {
+    "id": "prop-015",
+    "referenceNumber": "FD100015",
+    "title": "Detached bungalow with spacious accommodation",
+    "price": 365000,
+    "address": {
+      "line1": "8 Orchard Crescent",
+      "line2": null,
+      "city": "Liverpool",
+      "postcode": "L25 4QJ"
+    },
+    "coordinates": {
+      "latitude": 53.3784,
+      "longitude": -2.8526
+    },
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "squareMetres": 103,
+    "propertyType": "bungalow",
+    "description": "A well-proportioned detached bungalow in a quiet residential setting. The property offers three bedrooms, a generous lounge and a fitted kitchen with views over the rear garden. There is plenty of potential to personalise the accommodation, with local amenities and transport links close by.",
+    "images": [
+      {
+        "id": "img-015-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Detached single-storey house exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-015-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Bright and spacious living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-16T16:00:00Z"
+  },
+  {
+    "id": "prop-016",
+    "referenceNumber": "FD100016",
+    "title": "Impressive five-bedroom country-style residence",
+    "price": 825000,
+    "address": {
+      "line1": "3 Willow Mere",
+      "line2": null,
+      "city": "Harrogate",
+      "postcode": "HG2 7LT"
+    },
+    "coordinates": {
+      "latitude": 53.9852,
+      "longitude": -1.5378
+    },
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "squareMetres": 238,
+    "propertyType": "detached",
+    "description": "An impressive detached residence offering generous accommodation for modern family life. The property features five bedrooms, three bathrooms and multiple reception spaces, alongside a large kitchen and breakfast room. Outside, the established garden offers privacy and plenty of room for entertaining, complemented by a double garage and driveway.",
+    "images": [
+      {
+        "id": "img-016-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Large detached country-style residence",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-016-2",
+        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Large modern kitchen and dining area",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-22T10:00:00Z"
+  },
+  {
+    "id": "prop-017",
+    "referenceNumber": "FD100017",
+    "title": "Well-presented maisonette-style apartment",
+    "price": 245000,
+    "address": {
+      "line1": "Flat 2, Elm Court",
+      "line2": "19 Denmark Hill",
+      "city": "London",
+      "postcode": "SE5 8RS"
+    },
+    "coordinates": {
+      "latitude": 51.4685,
+      "longitude": -0.0902
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "squareMetres": 71,
+    "propertyType": "flat",
+    "description": "A spacious split-level apartment offering two well-proportioned bedrooms and comfortable living accommodation. The property features a separate kitchen, a bright reception room and excellent storage throughout. Ideally located for local shops, cafés and convenient transport connections into central London.",
+    "images": [
+      {
+        "id": "img-017-1",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Bright apartment living area",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-017-2",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern fitted kitchen",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-10T13:30:00Z"
+  },
+  {
+    "id": "prop-018",
+    "referenceNumber": "FD100018",
+    "title": "Spacious townhouse with flexible family accommodation",
+    "price": 465000,
+    "address": {
+      "line1": "11 Castle View",
+      "line2": null,
+      "city": "Edinburgh",
+      "postcode": "EH4 2QA"
+    },
+    "coordinates": {
+      "latitude": 55.9587,
+      "longitude": -3.2292
+    },
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "squareMetres": 162,
+    "propertyType": "townhouse",
+    "description": "A substantial townhouse offering versatile accommodation arranged over three floors. The property includes four bedrooms, two bathrooms and generous living space, making it well suited to families or those working from home. The rear patio provides a private outdoor area, with excellent local amenities nearby.",
+    "images": [
+      {
+        "id": "img-018-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Spacious townhouse exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-018-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Comfortable contemporary living space",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-18T09:45:00Z"
+  },
+  {
+    "id": "prop-019",
+    "referenceNumber": "FD100019",
+    "title": "Attractive semi-detached home with modern interiors",
+    "price": 395000,
+    "address": {
+      "line1": "27 Cedar Road",
+      "line2": null,
+      "city": "Solihull",
+      "postcode": "B91 2TY"
+    },
+    "coordinates": {
+      "latitude": 52.4075,
+      "longitude": -1.7811
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareMetres": 119,
+    "propertyType": "semi-detached",
+    "description": "A beautifully updated semi-detached home offering a practical layout and contemporary finishes. The property includes three bedrooms, a modern family bathroom and a bright open-plan kitchen and dining space. The low-maintenance rear garden is ideal for relaxing outdoors, and the property also benefits from a private driveway.",
+    "images": [
+      {
+        "id": "img-019-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern semi-detached house",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-019-2",
+        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern kitchen and dining area",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "withdrawn",
+    "listedAt": "2026-09-05T10:30:00Z"
+  },
+  {
+    "id": "prop-020",
+    "referenceNumber": "FD100020",
+    "title": "Traditional terraced home with excellent potential",
+    "price": 350000,
+    "address": {
+      "line1": "63 Alexandra Road",
+      "line2": null,
+      "city": "Manchester",
+      "postcode": "M16 8FJ"
+    },
+    "coordinates": {
+      "latitude": 53.4542,
+      "longitude": -2.2631
+    },
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "squareMetres": 98,
+    "propertyType": "terraced",
+    "description": "A traditional terraced home offering generous accommodation and excellent scope for improvement. The property features three bedrooms, a spacious reception room and a separate kitchen. A small enclosed courtyard provides outdoor space, while the location offers easy access to local amenities and public transport.",
+    "images": [
+      {
+        "id": "img-020-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Traditional terraced house exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-020-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Traditional living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-11T12:15:00Z"
+  },
+  {
+    "id": "prop-021",
+    "referenceNumber": "FD100021",
+    "title": "Modern apartment close to Edinburgh's historic centre",
+    "price": 210000,
+    "address": {
+      "line1": "Flat 14, Calton House",
+      "line2": "4 London Road",
+      "city": "Edinburgh",
+      "postcode": "EH7 5AP"
+    },
+    "coordinates": {
+      "latitude": 55.9561,
+      "longitude": -3.1788
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareMetres": 45,
+    "propertyType": "flat",
+    "description": "A well-maintained one-bedroom apartment offering comfortable modern living. The property features an open-plan kitchen and lounge, a double bedroom and a contemporary bathroom. Conveniently positioned for the city centre, nearby parks and excellent transport connections.",
+    "images": [
+      {
+        "id": "img-021-1",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern one-bedroom apartment",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-021-2",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Open-plan apartment interior",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-13T08:00:00Z"
+  },
+  {
+    "id": "prop-022",
+    "referenceNumber": "FD100022",
+    "title": "Executive detached home in a desirable location",
+    "price": 710000,
+    "address": {
+      "line1": "2 Park View Avenue",
+      "line2": null,
+      "city": "Guildford",
+      "postcode": "GU1 1QH"
+    },
+    "coordinates": {
+      "latitude": 51.2448,
+      "longitude": -0.5719
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "squareMetres": 205,
+    "propertyType": "detached",
+    "description": "An impressive executive home offering spacious and well-balanced accommodation. The property features four bedrooms, three bathrooms and a large kitchen and family room, alongside separate reception space. Outside, the landscaped rear garden and private driveway complete this attractive family home.",
+    "images": [
+      {
+        "id": "img-022-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Executive detached property exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-022-2",
+        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Large modern kitchen",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "sold",
+    "listedAt": "2026-08-20T14:30:00Z"
+  },
+  {
+    "id": "prop-023",
+    "referenceNumber": "FD100023",
+    "title": "Affordable two-bedroom home near local amenities",
+    "price": 175000,
+    "address": {
+      "line1": "19 Mill Street",
+      "line2": null,
+      "city": "Liverpool",
+      "postcode": "L7 3QW"
+    },
+    "coordinates": {
+      "latitude": 53.4021,
+      "longitude": -2.9613
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "squareMetres": 73,
+    "propertyType": "terraced",
+    "description": "An appealing two-bedroom terraced property offering an excellent opportunity for first-time buyers. The accommodation includes a comfortable lounge, fitted kitchen and two bedrooms. A private rear yard provides useful outdoor space, and the property is conveniently located for local shops and transport links.",
+    "images": [
+      {
+        "id": "img-023-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Two-bedroom terraced house exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-023-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Cosy living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-06T09:15:00Z"
+  },
+  {
+    "id": "prop-024",
+    "referenceNumber": "FD100024",
+    "title": "Spacious apartment with views across the city",
+    "price": 425000,
+    "address": {
+      "line1": "Apartment 21, The Crescent",
+      "line2": "10 Queen Street",
+      "city": "Bristol",
+      "postcode": "BS1 4NT"
+    },
+    "coordinates": {
+      "latitude": 51.4532,
+      "longitude": -2.5944
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareMetres": 109,
+    "propertyType": "flat",
+    "description": "A generous three-bedroom apartment offering modern accommodation in a central location. The property features a large open-plan living area, a well-appointed kitchen and two contemporary bathrooms. With shops, restaurants and transport links close at hand, this is an excellent city living opportunity.",
+    "images": [
+      {
+        "id": "img-024-1",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Spacious modern apartment interior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-024-2",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary open-plan kitchen",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "under-offer",
+    "listedAt": "2026-10-03T10:45:00Z"
+  },
+  {
+    "id": "prop-025",
+    "referenceNumber": "FD100025",
+    "title": "Three-bedroom semi-detached home with garden",
+    "price": 285000,
+    "address": {
+      "line1": "36 Greenfield Road",
+      "line2": null,
+      "city": "Leeds",
+      "postcode": "LS8 4JP"
+    },
+    "coordinates": {
+      "latitude": 53.8261,
+      "longitude": -1.5154
+    },
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "squareMetres": 101,
+    "propertyType": "semi-detached",
+    "description": "A well-presented semi-detached home offering practical accommodation for families and professionals alike. The property includes three bedrooms, a comfortable lounge and a fitted kitchen. The rear garden offers a pleasant outdoor space, while the location provides convenient access to schools, shops and local parks.",
+    "images": [
+      {
+        "id": "img-025-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Semi-detached residential property",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-025-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Bright family living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-09T11:30:00Z"
+  },
+  {
+    "id": "prop-026",
+    "referenceNumber": "FD100026",
+    "title": "Attractive period home in a sought-after neighbourhood",
+    "price": 495000,
+    "address": {
+      "line1": "7 Station Road",
+      "line2": null,
+      "city": "Guildford",
+      "postcode": "GU1 4DJ"
+    },
+    "coordinates": {
+      "latitude": 51.2398,
+      "longitude": -0.5792
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareMetres": 91,
+    "propertyType": "terraced",
+    "description": "A characterful period property that has been thoughtfully updated to provide stylish modern living. The accommodation includes two double bedrooms, a contemporary bathroom and a bright reception room leading into a modern kitchen. A private courtyard offers a low-maintenance outdoor area, ideal for busy professionals.",
+    "images": [
+      {
+        "id": "img-026-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Period terraced home exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-026-2",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modernised living room",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-15T15:00:00Z"
+  },
+  {
+    "id": "prop-027",
+    "referenceNumber": "FD100027",
+    "title": "Modern one-bedroom apartment near the Northern Quarter",
+    "price": 235000,
+    "address": {
+      "line1": "Flat 16, Cotton House",
+      "line2": "12 Newton Street",
+      "city": "Manchester",
+      "postcode": "M1 1FT"
+    },
+    "coordinates": {
+      "latitude": 53.4828,
+      "longitude": -2.2352
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareMetres": 51,
+    "propertyType": "flat",
+    "description": "A smart apartment in a vibrant central Manchester location. The property offers a double bedroom, a modern bathroom and a well-designed open-plan kitchen and living space. An excellent option for first-time buyers or investors, with independent cafés, restaurants and transport links on the doorstep.",
+    "images": [
+      {
+        "id": "img-027-1",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern city apartment interior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-027-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary apartment lounge",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-07T08:50:00Z"
+  },
+  {
+    "id": "prop-028",
+    "referenceNumber": "FD100028",
+    "title": "Modernised bungalow with generous living space",
+    "price": 445000,
+    "address": {
+      "line1": "14 Rosewood Gardens",
+      "line2": null,
+      "city": "Birmingham",
+      "postcode": "B13 8QF"
+    },
+    "coordinates": {
+      "latitude": 52.4315,
+      "longitude": -1.8917
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareMetres": 132,
+    "propertyType": "bungalow",
+    "description": "A beautifully modernised bungalow offering spacious single-storey accommodation. The property includes three bedrooms, two bathrooms and a generous open-plan kitchen and dining area. The rear garden provides a pleasant outdoor setting, while the private driveway offers convenient off-street parking.",
+    "images": [
+      {
+        "id": "img-028-1",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modernised bungalow exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-028-2",
+        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern open-plan kitchen and dining area",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-23T09:10:00Z"
+  },
+  {
+    "id": "prop-029",
+    "referenceNumber": "FD100029",
+    "title": "Elegant four-bedroom townhouse with period features",
+    "price": 585000,
+    "address": {
+      "line1": "22 Albert Terrace",
+      "line2": null,
+      "city": "Edinburgh",
+      "postcode": "EH10 4DP"
+    },
+    "coordinates": {
+      "latitude": 55.9364,
+      "longitude": -3.2112
+    },
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "squareMetres": 171,
+    "propertyType": "townhouse",
+    "description": "An attractive period townhouse offering generous accommodation and a wealth of original character. The property includes four bedrooms, two bathrooms and spacious reception rooms with high ceilings and traditional detailing. A private rear garden provides a welcome outdoor space, with local amenities and green spaces nearby.",
+    "images": [
+      {
+        "id": "img-029-1",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Elegant period townhouse exterior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-029-2",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Traditional living room with contemporary furnishings",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "sold",
+    "listedAt": "2026-08-12T10:20:00Z"
+  },
+  {
+    "id": "prop-030",
+    "referenceNumber": "FD100030",
+    "title": "Contemporary two-bedroom apartment near the waterfront",
+    "price": 310000,
+    "address": {
+      "line1": "Apartment 8, Marina Court",
+      "line2": "5 Harbour Road",
+      "city": "Bristol",
+      "postcode": "BS1 5UH"
+    },
+    "coordinates": {
+      "latitude": 51.4488,
+      "longitude": -2.6018
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "squareMetres": 82,
+    "propertyType": "flat",
+    "description": "A contemporary apartment offering well-proportioned accommodation in a convenient waterfront location. The property features two bedrooms, a modern bathroom and a bright open-plan living and kitchen area. The development is ideally positioned for local restaurants, leisure facilities and transport connections.",
+    "images": [
+      {
+        "id": "img-030-1",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Contemporary waterfront apartment interior",
+        "isPrimary": true,
+        "order": 1
+      },
+      {
+        "id": "img-030-2",
+        "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=80",
+        "alt": "Modern apartment kitchen and living area",
+        "isPrimary": false,
+        "order": 2
+      }
+    ],
+    "listingStatus": "available",
+    "listedAt": "2026-10-24T11:40:00Z"
+  }
+]

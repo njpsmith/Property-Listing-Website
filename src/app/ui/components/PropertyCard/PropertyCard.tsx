@@ -1,51 +1,52 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PropertyListing } from "@/features/properties/types/property.types";
-import { capitalizeFirstLetter } from "@/utils/utils";
+import {
+  capitalizeFirstLetter,
+  formatDate,
+  formatStatus,
+  getPrimaryImage,
+} from "@/utils/utils";
 
 export const PropertyCard = ({
   id,
-  address,
+  title,
   bedrooms,
   bathrooms,
   squareMetres,
-  property_type,
+  propertyType,
+  description,
+  images,
+  listedAt,
+  listingStatus,
 }: PropertyListing) => {
+  const primaryImage = getPrimaryImage(images);
+
   return (
     <Link href={`/properties/${id}`}>
       <div className="property-card border flex flex-col sm:flex-row mb-8 rounded-lg overflow-hidden">
         <div className="min-w-[260px] bg-slate-100">
           <Image
-            src="/images/dummy-property.webp"
-            width={476}
-            height={317}
-            alt="Property image"
+            // src="/images/dummy-property.webp"
+            src={primaryImage.url}
+            width={1350}
+            height={918}
+            alt={primaryImage.alt}
             className="w-full"
           />
         </div>
         <div className="p-4">
-          <h4 className="text-lg font-bold leading-8">{address}</h4>
+          <h4 className="text-lg font-bold leading-8">{title}</h4>
           <h5 className="font-bold">
-            {capitalizeFirstLetter(property_type)}
+            {capitalizeFirstLetter(propertyType)}
             {bedrooms && ` | ${bedrooms} bedroom${bedrooms > 1 ? "s" : ""}`}
             {bathrooms && ` | ${bathrooms} bathroom${bathrooms > 1 ? "s" : ""}`}
           </h5>
+          <p>{description}</p>
+          <p>{squareMetres} square metres</p>
           <p>
-            This immaculate four bedroom property is uniquely private and
-            spacious. Tucked away on a large plot in prestigious Quakers Walk,
-            it’s secluded yet within easy walking distance of the many amenities
-            in the Winchmore Hill area including several stations.
+            Listed: {formatDate(listedAt)} | {formatStatus(listingStatus)}
           </p>
-          <p>Square metres: {squareMetres}</p>
-
-          {/* <h4 className="text-lg font-bold leading-8">Burnham Close, Enfield</h4>
-        <h5 className="font-bold">Semi-Detached | 4 Bedrooms | 2 Bathrooms</h5>
-        <p>
-          This immaculate four bedroom property is uniquely private and
-          spacious. Tucked away on a large plot in prestigious Quakers Walk,
-          it’s secluded yet within easy walking distance of the many amenities
-          in the Winchmore Hill area including several stations.
-        </p> */}
         </div>
       </div>
     </Link>

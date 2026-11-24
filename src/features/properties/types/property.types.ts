@@ -18,7 +18,7 @@ export interface Coordinates {
   longitude: number;
 }
 
-interface PropertyImage {
+export interface PropertyImage {
   id: string;
   url: string;
   alt: string;
@@ -34,11 +34,11 @@ export interface PropertyListing {
   title: string; // E.g. 'Stunning 3-bed in Crystal Palace
   price: number;
   address: PropertyAddress;
-  coordinates?: Coordinates;
+  coordinates: Coordinates;
   bedrooms: number;
   bathrooms: number | null;
   squareMetres: number | null;
-  propertyType: string;
+  propertyType: PropertyType;
   description: string;
   images: PropertyImage[];
   listingStatus: ListingStatus;
