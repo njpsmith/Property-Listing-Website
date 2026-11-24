@@ -6,6 +6,7 @@ import {
   formatDate,
   formatStatus,
   getPrimaryImage,
+  formatPrice,
 } from "@/utils/utils";
 
 export const PropertyCard = ({
@@ -13,6 +14,7 @@ export const PropertyCard = ({
   title,
   bedrooms,
   bathrooms,
+  price,
   squareMetres,
   propertyType,
   description,
@@ -36,12 +38,14 @@ export const PropertyCard = ({
           />
         </div>
         <div className="p-4">
-          <h4 className="text-lg font-bold leading-8">{title}</h4>
-          <h5 className="font-bold">
+          <h4 className="text-lg font-bold mb-2">{title}</h4>
+          <h5 className="font-bold mb-2">
             {capitalizeFirstLetter(propertyType)}
             {bedrooms && ` | ${bedrooms} bedroom${bedrooms > 1 ? "s" : ""}`}
             {bathrooms && ` | ${bathrooms} bathroom${bathrooms > 1 ? "s" : ""}`}
           </h5>
+          <h5 className="font-bold">{formatPrice(price)}</h5>
+
           <p>{description}</p>
           <p>{squareMetres} square metres</p>
           <p>
